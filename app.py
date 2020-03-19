@@ -10,9 +10,28 @@ from dash.dependencies import Input, Output, State
 import plotly.graph_objs as go
 import pandas as pd
 import requests, zipfile, io, os
+from datetime import datetime as dt
+from datetime import timedelta 
+
+
+import tabula
+import PyPDF2
+from tika import parser
+
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+import re
+import wget
+import os
+import numpy as np
+
 pd.options.mode.chained_assignment = None  # default='warn'
 
 ##################################################################################################################################################################################################
+
+# Setting default
+yesterday=(dt.today()- timedelta(days=1))
 
 # CSS design
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -23,35 +42,54 @@ server = app.server
 
 # Dash layout
 app.layout = html.Div(children=[
+    html.Br(),
     html.H1(
         children='Corona Virus in Norway',
-        style={
-            'textAlign': 'center'}),
+        style=dict(display='flex', justifyContent='center')),
     html.Br(),
     html.Br(),
-    html.Div(children='Today', style={
-        'textAlign': 'center'}),
+    # html.Div(children='Today', style={
+    #     'textAlign': 'center'}),
     html.Div([
-        html.Div([
-            dcc.Dropdown(id='Date',
-                options=[
-                    {'label': u'Today', 'value': '9999'},
-                    {'label': 'Yesterday', 'value': '99999'},
-                ],
-                placeholder="Select date",
-                style={'margin':'10px 0px', 'width': '150px'}),
-        ], className="one columns"),
-    ], className="row"),
+        html.Div(
+            children=[dcc.DatePickerSingle(
+                id='my-date-picker-single',
+                min_date_allowed=dt(2020, 3, 1),
+                max_date_allowed=dt.today(),
+                initial_visible_month=dt(2020, 3, 1),
+                date=yesterday.strftime('%Y-%m-%d'))],  # fill out your Input however you need
+            style=dict(display='flex', justifyContent='center')
+        )
+    ]),
+    # html.Div(id='df',style=dict(display='flex', justifyContent='center', color='green',fontsize='100px')),
+    html.H2(children='Totalt tilfeller',style={'color':'black','font-weight': 'bold','font-size':'50px','textAlign': 'center'}),
+    html.Div(id='df_tt',style={'color':'green','font-weight': 'bold','font-size':'50px','textAlign': 'center'}),
+    html.H2(children='Nye tilfeller',style={'color':'black','font-weight': 'bold','font-size':'50px','textAlign': 'center'}),
+    html.Div(id='df_nt',style={'color':'purple','font-weight': 'bold','font-size':'50px','textAlign': 'center'}),
+    html.H2(children='Pasienter',style={'color':'black','font-weight': 'bold','font-size':'50px','textAlign': 'center'}),
+    html.Div(id='df_p',style={'color':'orange','font-weight': 'bold','font-size':'50px','textAlign': 'center'}),
+    html.H2(children='Dodsfall',style={'color':'black','font-weight': 'bold','font-size':'50px','textAlign': 'center'}),
+    html.Div(id='df_d',style={'color':'red','font-weight': 'bold','font-size':'50px','textAlign': 'center'}),
+    html.H2(children='Totalt testet',style={'color':'black','font-weight': 'bold','font-size':'50px','textAlign': 'center'}),
+    html.Div(id='df_ttt',style={'color':'black','font-weight': 'bold','font-size':'50px','textAlign': 'center'}),
+        # html.Div([
+        #     dcc.DatePickerSingle(
+        #         id='my-date-picker-single',
+        #         min_date_allowed=dt(2020, 3, 1),
+        #         max_date_allowed=dt(2020, 4, 1),
+        #         initial_visible_month=dt(2020, 3, 1),
+        #         date=dt.today().strftime('%Y-%m-%d')),
+        # ], className="one columns"),
 
-    html.Div([
-        html.Div([
-            html.Button(id='submit-button', n_clicks=0, children='Submit',
-                style={'color': 'white','background-color':'blue','margin':'10px 0px'})
-        ], className="one columns"),
-        html.Div([
-            html.Div(id='fail',style={'color':'red','font-weight': 'bold','margin':'15px 0px', 'width': '150px'}),
-        ], className="one columns"),
-    ], className="row"),
+    # html.Div([
+    #     html.Div([
+    #         html.Button(id='submit-button', n_clicks=0, children='Submit',
+    #             style={'color': 'white','background-color':'blue','margin':'10px 0px'})
+    #     ], className="one columns"),
+    #     html.Div([
+    #         html.Div(id='fail',style={'color':'red','font-weight': 'bold','margin':'15px 0px', 'width': '150px'}),
+    #     ], className="one columns"),
+    # ], className="row"),
 
     # dcc.Graph(id='bar-graph',figure={'data': []},),
     html.Div([
@@ -59,6 +97,113 @@ app.layout = html.Div(children=[
         dcc.Link('https://gregoirejan.github.io/', href="https://gregoirejan.github.io/")
     ])
 ])
+
+@app.callback(
+    Output('df_tt', 'children'),
+    [Input('my-date-picker-single', 'date')])
+def output(date):
+    return df.loc[date,'Totalt_Tilfeller'][0]
+
+@app.callback(
+    Output('df_nt', 'children'),
+    [Input('my-date-picker-single', 'date')])
+def output(date):
+    return df.loc[date,'Nye_tilfeller'][0]
+
+@app.callback(
+    Output('df_p', 'children'),
+    [Input('my-date-picker-single', 'date')])
+def output(date):
+    return df.loc[date,'Pasienter'][0]
+
+@app.callback(
+    Output('df_d', 'children'),
+    [Input('my-date-picker-single', 'date')])
+def output(date):
+    return df.loc[date,'Dødsfall'][0]
+
+@app.callback(
+    Output('df_ttt', 'children'),
+    [Input('my-date-picker-single', 'date')])
+def output(date):
+    return df.loc[date,'Totalt_testet'][0]
+
+# Load data
+files = [f for f in os.listdir('.') if f.endswith('.pdf')]
+df = pd.DataFrame (columns = ['Totalt_Tilfeller','Nye_tilfeller','Pasienter','Dødsfall','Totalt_testet'])
+df_fylke = pd.DataFrame(columns = list(['Agder',
+'Innlandet',
+'Møre og Romsdal',
+'Nordland',
+'Oslo',
+'Rogaland',
+'Troms og Finnmark',
+'Trøndelag',
+'Vestfold og Telemark',
+'Vestland',
+'Viken']))
+df_age = pd.DataFrame(columns = list(['0 – 9 år',
+'10 – 19 år',
+'20 -29 år',
+'30 – 39 år',
+'40 – 49 år',
+'50 – 59 år',
+'60 – 69 år',
+'70 – 79 år',
+'80 – 89 år',
+'90 – 99 år']))
+
+for f in files:
+    print(f)
+    # Fylke
+    temp = tabula.read_pdf('./'+f,pages='all')
+    try:
+        df_fylke.loc[re.sub(r'.pdf', '', f)]=list([item for item in temp if 'Fylke' in item][0]["Antall positive"])
+    except:
+        df_fylke.loc[re.sub(r'.pdf', '', f)]=[np.nan]*11
+    # Age
+    try:
+        df_age.loc[re.sub(r'.pdf', '', f)]=list([item for item in temp if 'Alder' in item][0]["Antall positive"])
+    except:
+        df_age.loc[re.sub(r'.pdf', '', f)]=[np.nan]*10
+    # Text scraping
+    raw = parser.from_file('./'+f)
+    line = re.sub(r'(\d)\s+(\d)', r'\1\2', raw['content']).split("utbruddsregisteret",1)[1]
+    try:
+        ttilfeller=re.findall(r"(\d+) tilfeller", line)[0]
+    except:
+        ttilfeller=np.nan
+    try:
+        ntilfeller=re.findall(r"hvorav (\d+) tilfeller", line)[0]
+    except:
+        ntilfeller=np.nan
+    try:
+        pasienter=re.findall(r"(\d+) pasienter", line)[0]
+    except:
+        pasienter=np.nan
+    try:
+        dødsfall=re.findall(r"(\d+) dødsfall", line)[0]
+    except:
+        dødsfall=np.nan
+    try:
+        testet=re.findall(r"Totalt (\d+) er rapportert testet for Koronavirus ", line)[0]
+    except:
+        testet=np.nan
+    data = {'Totalt_Tilfeller':  [ttilfeller],
+        'Nye_tilfeller': [ntilfeller],
+        'Pasienter': [pasienter],
+        'Dødsfall': [dødsfall],
+        'Totalt_testet': [testet],
+        }
+    df = df.append(pd.DataFrame (data, columns = ['Totalt_Tilfeller','Nye_tilfeller','Pasienter','Dødsfall','Totalt_testet']))
+datetime_index = pd.DatetimeIndex([re.sub(r'.pdf', '', f) for f in files])
+df=df.set_index(datetime_index)
+
+#################################################################################################################################################################################################
+
+# Run dash server
+if __name__ == '__main__':
+    app.run_server(debug=True)
 
 # # Callback to check for avaibility of input data after clicking the submit button
 # @app.callback(
@@ -160,12 +305,6 @@ app.layout = html.Div(children=[
 #         )],
 #         layout=go.Layout(xaxis={'title':'Teams'}, yaxis={'title':'Number of games'})
 #     )
-#################################################################################################################################################################################################
 
-# Run dash server
-if __name__ == '__main__':
-    app.run_server(debug=True)
-    
-    
     
     
