@@ -1,5 +1,5 @@
 # Dash application about losing streaks
-# G. Jan - 12/18
+# G. Jan - 03/20
 
 # Libraries
 import dash
@@ -14,8 +14,8 @@ from datetime import datetime as dt
 from datetime import timedelta 
 
 
-import tabula
-import PyPDF2
+# import tabula
+# import PyPDF2
 from tika import parser
 
 
@@ -129,7 +129,7 @@ def output(date):
     return df.loc[date,'Totalt_testet'][0]
 
 # Load data
-files = [f for f in os.listdir('.') if f.endswith('.pdf')]
+files = [f for f in os.listdir('.') if f.endswith('.txt') and f.startswith('2020')]
 df = pd.DataFrame (columns = ['Totalt_Tilfeller','Nye_tilfeller','Pasienter','Dødsfall','Totalt_testet'])
 df_fylke = pd.DataFrame(columns = list(['Agder',
 'Innlandet',
@@ -155,17 +155,17 @@ df_age = pd.DataFrame(columns = list(['0 – 9 år',
 
 for f in files:
     print(f)
-    # Fylke
-    temp = tabula.read_pdf('./'+f,pages='all')
-    try:
-        df_fylke.loc[re.sub(r'.pdf', '', f)]=list([item for item in temp if 'Fylke' in item][0]["Antall positive"])
-    except:
-        df_fylke.loc[re.sub(r'.pdf', '', f)]=[np.nan]*11
-    # Age
-    try:
-        df_age.loc[re.sub(r'.pdf', '', f)]=list([item for item in temp if 'Alder' in item][0]["Antall positive"])
-    except:
-        df_age.loc[re.sub(r'.pdf', '', f)]=[np.nan]*10
+    # # Fylke
+    # temp = tabula.read_txt('./'+f,pages='all')
+    # try:
+    #     df_fylke.loc[re.sub(r'.txt', '', f)]=list([item for item in temp if 'Fylke' in item][0]["Antall positive"])
+    # except:
+    #     df_fylke.loc[re.sub(r'.txt', '', f)]=[np.nan]*11
+    # # Age
+    # try:
+    #     df_age.loc[re.sub(r'.txt', '', f)]=list([item for item in temp if 'Alder' in item][0]["Antall positive"])
+    # except:
+    #     df_age.loc[re.sub(r'.txt', '', f)]=[np.nan]*10
     # Text scraping
     raw = parser.from_file('./'+f)
     line = re.sub(r'(\d)\s+(\d)', r'\1\2', raw['content']).split("utbruddsregisteret",1)[1]
@@ -196,7 +196,7 @@ for f in files:
         'Totalt_testet': [testet],
         }
     df = df.append(pd.DataFrame (data, columns = ['Totalt_Tilfeller','Nye_tilfeller','Pasienter','Dødsfall','Totalt_testet']))
-datetime_index = pd.DatetimeIndex([re.sub(r'.pdf', '', f) for f in files])
+datetime_index = pd.DatetimeIndex([re.sub(r'.txt', '', f) for f in files])
 df=df.set_index(datetime_index)
 
 #################################################################################################################################################################################################
