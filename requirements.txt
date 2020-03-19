@@ -10,9 +10,6 @@ numpy==1.18.2
 pandas==1.0.3
 plotly==4.5.4
 PyPDF2==1.26.0
-python-apt==1.6.1
-python-dateutil==2.7.5
-python-debian==0.1.32
 requests==2.18.4
 seaborn==0.10.0
 tabula-py==2.1.0
