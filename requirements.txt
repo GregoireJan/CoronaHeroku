@@ -69,7 +69,7 @@ pandocfilters==1.4.2
 parso==0.3.1
 pexpect==4.2.1
 pickleshare==0.7.5
-Pillow==5.1.0
+Pillow==6.2.0
 plotly==4.5.4
 prometheus-client==0.4.2
 prompt-toolkit==2.0.7
