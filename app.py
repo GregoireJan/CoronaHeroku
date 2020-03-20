@@ -16,7 +16,7 @@ from datetime import timedelta
 
 # import tabula
 # import PyPDF2
-from tika import parser
+# from tika import parser
 
 
 import seaborn as sns
@@ -102,31 +102,31 @@ app.layout = html.Div(children=[
     Output('df_tt', 'children'),
     [Input('my-date-picker-single', 'date')])
 def output(date):
-    return df.loc[date,'Totalt_Tilfeller'][0]
+    return df.loc[date,'Totalt_Tilfeller']
 
 @app.callback(
     Output('df_nt', 'children'),
     [Input('my-date-picker-single', 'date')])
 def output(date):
-    return df.loc[date,'Nye_tilfeller'][0]
+    return df.loc[date,'Nye_tilfeller']
 
 @app.callback(
     Output('df_p', 'children'),
     [Input('my-date-picker-single', 'date')])
 def output(date):
-    return df.loc[date,'Pasienter'][0]
+    return df.loc[date,'Pasienter']
 
 @app.callback(
     Output('df_d', 'children'),
     [Input('my-date-picker-single', 'date')])
 def output(date):
-    return df.loc[date,'Dødsfall'][0]
+    return df.loc[date,'Dødsfall']
 
 @app.callback(
     Output('df_ttt', 'children'),
     [Input('my-date-picker-single', 'date')])
 def output(date):
-    return df.loc[date,'Totalt_testet'][0]
+    return df.loc[date,'Totalt_testet']
 
 # Load data
 files = [f for f in os.listdir('.') if f.endswith('.txt') and f.startswith('2020')]
@@ -167,15 +167,17 @@ for f in sorted(files):
     # except:
     #     df_age.loc[re.sub(r'.txt', '', f)]=[np.nan]*10
     # Text scraping
-    raw = parser.from_file('./'+f)
-    line = re.sub(r'(\d)\s+(\d)', r'\1\2', raw['content']).split("utbruddsregisteret",1)[1]
-    if f == '2020-03-16.txt':
-        print(line.split("Fylker",1)[1][50:750])
-    try:
-        one=line.split("Fylker",1)[1][50:750]
-        df_fylke.loc[re.sub(r'.txt', '', f)]=list([item for item in one.split()[:40] if item.isdigit()])
-    except:
-        df_fylke.loc[re.sub(r'.txt', '', f)]=[np.nan]*11
+    # raw = parser.from_file('./'+f)
+    f=open('./'+f, "r")
+    raw =f.read()
+    line = re.sub(r'(\d)\s+(\d)', r'\1\2', raw).split("utbruddsregisteret",1)[1]
+    # if f == '2020-03-16.txt':
+        # print(line.split("Fylker",1)[1][50:750])
+    # try:
+    #     one=line.split("Fylker",1)[1][50:750]
+    #     df_fylke.loc[re.sub(r'.txt', '', f)]=list([item for item in one.split()[:40] if item.isdigit()])
+    # except:
+    #     df_fylke.loc[re.sub(r'.txt', '', f)]=[np.nan]*11
     try:
         ttilfeller=re.findall(r"(\d+) tilfeller", line)[0]
     except:
@@ -203,9 +205,8 @@ for f in sorted(files):
         'Totalt_testet': [testet],
         }
     df = df.append(pd.DataFrame (data, columns = ['Totalt_Tilfeller','Nye_tilfeller','Pasienter','Dødsfall','Totalt_testet']))
-datetime_index = pd.DatetimeIndex([re.sub(r'.txt', '', f) for f in files])
+datetime_index = pd.DatetimeIndex([re.sub(r'.txt', '', f) for f in sorted(files)])
 df=df.set_index(datetime_index)
-print(df_fylke)
 
 #################################################################################################################################################################################################
 
