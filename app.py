@@ -153,7 +153,7 @@ df_age = pd.DataFrame(columns = list(['0 – 9 år',
 '80 – 89 år',
 '90 – 99 år']))
 
-for f in files:
+for f in sorted(files):
     print(f)
     # # Fylke
     # temp = tabula.read_txt('./'+f,pages='all')
@@ -169,6 +169,13 @@ for f in files:
     # Text scraping
     raw = parser.from_file('./'+f)
     line = re.sub(r'(\d)\s+(\d)', r'\1\2', raw['content']).split("utbruddsregisteret",1)[1]
+    if f == '2020-03-16.txt':
+        print(line.split("Fylker",1)[1][50:750])
+    try:
+        one=line.split("Fylker",1)[1][50:750]
+        df_fylke.loc[re.sub(r'.txt', '', f)]=list([item for item in one.split()[:40] if item.isdigit()])
+    except:
+        df_fylke.loc[re.sub(r'.txt', '', f)]=[np.nan]*11
     try:
         ttilfeller=re.findall(r"(\d+) tilfeller", line)[0]
     except:
@@ -198,6 +205,7 @@ for f in files:
     df = df.append(pd.DataFrame (data, columns = ['Totalt_Tilfeller','Nye_tilfeller','Pasienter','Dødsfall','Totalt_testet']))
 datetime_index = pd.DatetimeIndex([re.sub(r'.txt', '', f) for f in files])
 df=df.set_index(datetime_index)
+print(df_fylke)
 
 #################################################################################################################################################################################################
 
