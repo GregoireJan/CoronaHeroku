@@ -85,7 +85,7 @@ app.layout = html.Div(
                             html.Br(),
                             html.Br(),
                             html.H2(
-                                children="Totalt tilfeller",
+                                children="Total cases",
                                 style={
                                     "color": "black",
                                     # "font-weight": "bold",
@@ -103,7 +103,7 @@ app.layout = html.Div(
                                 },
                             ),
                             html.H2(
-                                children="Nye tilfeller",
+                                children="New cases",
                                 style={
                                     "color": "black",
                                     # "font-weight": "bold",
@@ -121,7 +121,7 @@ app.layout = html.Div(
                                 },
                             ),
                             html.H2(
-                                children="Pasienter",
+                                children="Patients hospitalized",
                                 style={
                                     "color": "black",
                                     # "font-weight": "bold",
@@ -139,7 +139,7 @@ app.layout = html.Div(
                                 },
                             ),
                             html.H2(
-                                children="Dodsfall",
+                                children="Deaths",
                                 style={
                                     "color": "black",
                                     # "font-weight": "bold",
@@ -157,7 +157,7 @@ app.layout = html.Div(
                                 },
                             ),
                             html.H2(
-                                children="Totalt testet",
+                                children="Total Corona tested",
                                 style={
                                     "color": "black",
                                     # "font-weight": "bold",
@@ -224,7 +224,7 @@ def output(date):
 def barplot(date):
     return go.Figure(
         data=[go.Bar(x=list(df.index), y=list(df["Totalt_Tilfeller"]),marker={"color": "black"})],
-        layout=go.Layout(title={"text": "Totalt Tilfeller","font": {"size": 30},'x':0.5},xaxis={"title": "Date","range":[dt(2020,3,1),dt(2020,4,1)],"tickmode": "linear"}, yaxis={"title": "Tilfeller"},plot_bgcolor="rgb(255,255,255)"),
+        layout=go.Layout(title={"text": "Total cases","font": {"size": 30},'x':0.5},xaxis={"title": "Date","range":[dt(2020,3,1),dt(2020,4,1)],"tickmode": "linear"}, yaxis={"title": "Total cases"},plot_bgcolor="rgb(255,255,255)"),
     )
 
 
@@ -235,9 +235,10 @@ def barplot(date):
 def barplot(date):
     return go.Figure(
         data=[go.Bar(x=list(df.index), y=list(df["Nye_tilfeller"]),marker={"color": "black"})],
-        layout=go.Layout(title={"text": "Nye Tilfeller","font": {"size": 30},'x':0.5},xaxis={"title": "Date","range":[dt(2020,3,1),dt(2020,4,1)],"tickmode": "linear"}, yaxis={"title": "Tilfeller"},plot_bgcolor="rgb(255,255,255)"),
+        layout=go.Layout(title={"text": "New cases","font": {"size": 30},'x':0.5},xaxis={"title": "Date","range":[dt(2020,3,1),dt(2020,4,1)],"tickmode": "linear"}, yaxis={"title": "New cases"},plot_bgcolor="rgb(255,255,255)"),
     )
 
+######################################################################################
 # Load data
 files = [f for f in os.listdir(".") if f.endswith(".txt") and f.startswith("2020")]
 df = pd.DataFrame(
