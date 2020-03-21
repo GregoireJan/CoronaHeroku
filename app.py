@@ -41,19 +41,17 @@ server = app.server
 # Dash layout
 app.layout = html.Div(
     [
-        dbc.Row(
-            dbc.Col(
-                html.Div(
-                    children=[
-                        html.Br(),
-                        html.H1(
-                            children="Corona Virus in Norway",
-                            # style=dict(display="flex", justifyContent="center"),
-                            style={'font-size':'50px','font-weight': 'bold',"textAlign": "center"},
-                        ),
-                    ],
+        dbc.Navbar(
+            [
+                # Use row and col to control vertical alignment of logo / brand
+                dbc.Row(
+                    [dbc.Col(dbc.NavbarBrand("COVID-19 IN NORWAY", className="mb-0 h1",style={"font-size":"30px"})),],
+                    align="center",
+                    no_gutters=True,
                 ),
-            ),
+            ],
+            color="dark",
+            dark=True,
         ),
         dbc.Row(
             [
@@ -80,8 +78,15 @@ app.layout = html.Div(
                                     )
                                 ],  # fill out your Input however you need
                                 # style=dict(display="flex", justifyContent="center"),
-                                style={'font-size':'20px','font-weight': 'bold',"textAlign": "center"},
+                                style={
+                                    "font-size": "20px",
+                                    "font-weight": "bold",
+                                    "textAlign": "center",
+                                },
                             ),
+                            html.Br(),
+                            html.Br(),
+                            html.Br(),
                             html.Br(),
                             html.Br(),
                             html.H2(
@@ -96,7 +101,7 @@ app.layout = html.Div(
                             html.Div(
                                 id="df_tt",
                                 style={
-                                    "color": "green",
+                                    "color": "LightSlateGrey",
                                     "font-weight": "bold",
                                     "font-size": "30px",
                                     "textAlign": "center",
@@ -114,7 +119,7 @@ app.layout = html.Div(
                             html.Div(
                                 id="df_nt",
                                 style={
-                                    "color": "purple",
+                                    "color": "LightSlateGrey",
                                     "font-weight": "bold",
                                     "font-size": "30px",
                                     "textAlign": "center",
@@ -132,7 +137,7 @@ app.layout = html.Div(
                             html.Div(
                                 id="df_p",
                                 style={
-                                    "color": "orange",
+                                    "color": "LightSlateGrey",
                                     "font-weight": "bold",
                                     "font-size": "30px",
                                     "textAlign": "center",
@@ -150,7 +155,7 @@ app.layout = html.Div(
                             html.Div(
                                 id="df_d",
                                 style={
-                                    "color": "red",
+                                    "color": "LightSlateGrey",
                                     "font-weight": "bold",
                                     "font-size": "30px",
                                     "textAlign": "center",
@@ -168,15 +173,17 @@ app.layout = html.Div(
                             html.Div(
                                 id="df_ttt",
                                 style={
-                                    "color": "black",
+                                    "color": "LightSlateGrey",
                                     "font-weight": "bold",
                                     "font-size": "30px",
                                     "textAlign": "center",
                                 },
                             ),
                         ],
-                    )
-                , width=3, align="center"),
+                    ),
+                    width=3,
+                    align="center",
+                ),
                 dbc.Col(
                     html.Div(
                         [
@@ -185,12 +192,14 @@ app.layout = html.Div(
                                 [dcc.Graph(id="bar-graph2", figure={"data": []},)]
                             ),
                         ]
-                    )
-                , width=9),
+                    ),
+                    width=9,
+                ),
             ]
         ),
     ]
 )
+
 
 @app.callback(Output("df_tt", "children"), [Input("my-date-picker-single", "date")])
 def output(date):
@@ -223,8 +232,23 @@ def output(date):
 )
 def barplot(date):
     return go.Figure(
-        data=[go.Bar(x=list(df.index), y=list(df["Totalt_Tilfeller"]),marker={"color": "black"})],
-        layout=go.Layout(title={"text": "Total cases","font": {"size": 30},'x':0.5},xaxis={"title": "Date","range":[dt(2020,3,1),dt(2020,4,1)],"tickmode": "linear"}, yaxis={"title": "Total cases"},plot_bgcolor="rgb(255,255,255)"),
+        data=[
+            go.Bar(
+                x=list(df.index),
+                y=list(df["Totalt_Tilfeller"]),
+                marker={"color": "DarkOliveGreen"},
+            )
+        ],
+        layout=go.Layout(
+            title={"text": "Total cases", "font": {"size": 30}, "x": 0.5},
+            xaxis={
+                "title": "",
+                "range": [dt(2020, 3, 1), dt(2020, 4, 1)],
+                "tickmode": "linear",
+            },
+            yaxis={"title": "Total cases"},
+            plot_bgcolor="rgb(255,255,255)",
+        ),
     )
 
 
@@ -234,9 +258,25 @@ def barplot(date):
 )
 def barplot(date):
     return go.Figure(
-        data=[go.Bar(x=list(df.index), y=list(df["Nye_tilfeller"]),marker={"color": "black"})],
-        layout=go.Layout(title={"text": "New cases","font": {"size": 30},'x':0.5},xaxis={"title": "Date","range":[dt(2020,3,1),dt(2020,4,1)],"tickmode": "linear"}, yaxis={"title": "New cases"},plot_bgcolor="rgb(255,255,255)"),
+        data=[
+            go.Bar(
+                x=list(df.index),
+                y=list(df["Nye_tilfeller"]),
+                marker={"color": "DarkOliveGreen"},
+            )
+        ],
+        layout=go.Layout(
+            title={"text": "New cases", "font": {"size": 30}, "x": 0.5},
+            xaxis={
+                "title": "",
+                "range": [dt(2020, 3, 1), dt(2020, 4, 1)],
+                "tickmode": "linear",
+            },
+            yaxis={"title": "New cases"},
+            plot_bgcolor="rgb(255,255,255)",
+        ),
     )
+
 
 ######################################################################################
 # Load data
