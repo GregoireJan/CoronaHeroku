@@ -24,6 +24,7 @@ import numpy as np
 pd.options.mode.chained_assignment = None  # default='warn'
 
 ##################################################################################################################################################################################################
+# DASH
 
 # Setting default
 yesterday = dt.today() - timedelta(days=1)
@@ -45,7 +46,7 @@ app.layout = html.Div(
             [
                 # Use row and col to control vertical alignment of logo / brand
                 dbc.Row(
-                    [dbc.Col(dbc.NavbarBrand("COVID-19 IN NORWAY", className="mb-0 h1",style={"font-size":"30px"})),],
+                    [dbc.Col(dbc.NavbarBrand("COVID-19 IN NORWAY", className="mb-0 h1",style={"font-size":"30px"}))],
                     align="center",
                     no_gutters=True,
                 ),
@@ -101,7 +102,7 @@ app.layout = html.Div(
                             html.Div(
                                 id="df_tt",
                                 style={
-                                    "color": "LightSlateGrey",
+                                    "color": "LimeGreen",
                                     "font-weight": "bold",
                                     "font-size": "30px",
                                     "textAlign": "center",
@@ -155,7 +156,7 @@ app.layout = html.Div(
                             html.Div(
                                 id="df_d",
                                 style={
-                                    "color": "LightSlateGrey",
+                                    "color": "Crimson",
                                     "font-weight": "bold",
                                     "font-size": "30px",
                                     "textAlign": "center",
@@ -236,7 +237,7 @@ def barplot(date):
             go.Bar(
                 x=list(df.index),
                 y=list(df["Totalt_Tilfeller"]),
-                marker={"color": "DarkOliveGreen"},
+                marker={"color": "MediumAquaMarine"},
             )
         ],
         layout=go.Layout(
@@ -262,7 +263,7 @@ def barplot(date):
             go.Bar(
                 x=list(df.index),
                 y=list(df["Nye_tilfeller"]),
-                marker={"color": "DarkOliveGreen"},
+                marker={"color": "SteelBlue"},
             )
         ],
         layout=go.Layout(
