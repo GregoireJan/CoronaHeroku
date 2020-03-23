@@ -435,6 +435,7 @@ app.layout = html.Div(
                 ),
             ]
         ),
+        html.Footer(children=['© 2020 Copyright / Data from FHI & John Hopkins University'],style={"textAlign": "center"})
     ]
 )
 
