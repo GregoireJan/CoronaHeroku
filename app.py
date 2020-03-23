@@ -243,9 +243,10 @@ app.layout = html.Div(
                                         "textAlign": "center",
                                     },
                                 ),
-                                dcc.Link(
+                                html.A(
                                     "https://gregoirejan.github.io/",
                                     href="https://gregoirejan.github.io/",
+                                    target="_blank",
                                 ),
                             ]
                         ),
