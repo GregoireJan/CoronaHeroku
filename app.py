@@ -151,7 +151,7 @@ df_tsdeath = df_tsdeath.set_index(datetime_index)
 
 df_daysdeath = df_tsdeath.copy()
 # Threshold deaths
-n = 5
+n = 1
 for col in df_daysdeath.columns:
     if df_daysdeath[col].max() > n:
         firsdeath = df_daysdeath.index[df_daysdeath[col] > n][0]
@@ -400,7 +400,7 @@ app.layout = html.Div(
                     ]
                 ),
             ],
-            style={"border": "30px solid", "color": "white"},
+            style={"border": "50px solid", "color": "white"},
         ),
         dbc.Row(
             [
@@ -412,7 +412,6 @@ app.layout = html.Div(
                 ),
                 dbc.Col(
                     [
-                        # html.Div('bblabbalbal'),
                         html.Div(
                             dcc.Dropdown(
                                 id="country",
@@ -429,6 +428,7 @@ app.layout = html.Div(
                             ),
                         ),
                         html.Div([dcc.Graph(id="scatter-graph", figure={"data": []},)]),
+                        html.Div([dcc.Graph(id="scatter-graph2", figure={"data": []},)]),
                     ],
                     align="center",
                 ),
@@ -537,6 +537,37 @@ def scatter(country):
         layout=go.Layout(
             title={
                 "text": "Growth Rate for Total Cases",
+                "font": {"size": 30},
+                "x": 0.5,
+            },
+            xaxis={"title": "Days", "range": [-1, 30], "tickmode": "linear",},
+            yaxis={"title": "Growth Rate X (compared to Day 0)"},
+            plot_bgcolor="rgb(255,255,255)",
+        ),
+    )
+
+@app.callback(
+    dash.dependencies.Output("scatter-graph2", "figure"), [Input("country", "value")],
+)
+def scatter(country):
+    return go.Figure(
+        data=[
+            go.Scatter(
+                x=list(df_daysdeath.index.values),
+                y=list(df_daysdeath["Norway"].values),
+                mode="markers",
+                name="Norway",
+            ),
+            go.Scatter(
+                x=list(df_daysdeath.index.values),
+                y=list(df_daysdeath[country].values),
+                mode="markers",
+                name=country,
+            ),
+        ],
+        layout=go.Layout(
+            title={
+                "text": "Growth Rate for Deaths",
                 "font": {"size": 30},
                 "x": 0.5,
             },
