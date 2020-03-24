@@ -144,7 +144,7 @@ df = df.set_index(datetime_index)
 ### Time Series
 
 df_tsdeath = pd.read_csv("Data/time_series_19-covid-Deaths.csv")
-df_tsdeath = df_tsdeath.groupby("Country/Region").sum().reset_index().T
+df_tsdeath = df_tsdeath.groupby("Country/Region").sum().reset_index().T[:-1]
 df_tsdeath.columns = df_tsdeath.iloc[0, :]
 df_tsdeath = df_tsdeath[3:]
 datetime_index = pd.DatetimeIndex(df_tsdeath.index)
@@ -164,7 +164,7 @@ df_daysdeath.index.names = ["Days"]
 df_daysdeath.iloc[0, :] = 0
 
 df_tsconf = pd.read_csv("Data/time_series_19-covid-Confirmed.csv")
-df_tsconf = df_tsconf.groupby("Country/Region").sum().reset_index().T
+df_tsconf = df_tsconf.groupby("Country/Region").sum().reset_index().T[:-1]
 df_tsconf.columns = df_tsconf.iloc[0, :]
 df_tsconf = df_tsconf[3:]
 datetime_index = pd.DatetimeIndex(df_tsconf.index)
@@ -182,7 +182,6 @@ for col in df_daysconf.columns:
 df_daysconf = df_daysconf.reset_index().drop(columns="index")
 df_daysconf.index.names = ["Days"]
 df_daysconf.iloc[0, :] = 0
-
 
 def convert_options(optionlabels, optionvals):
     return [
@@ -442,28 +441,78 @@ app.layout = html.Div(
 
 
 @app.callback(Output("df_tt", "children"), [Input("my-date-picker-single", "date")])
-def output(date):
-    return df.loc[date, "Totalt_Tilfeller"]
+def outputtt(date):
+    try:
+        daybefore=dt.strptime(date,"%Y-%m-%d")-timedelta(days=1)
+        if int(df.loc[date, "Totalt_Tilfeller"]) > int(df.loc[daybefore, "Totalt_Tilfeller"]):
+            arrow=" \u2B09"
+        elif int(df.loc[date, "Totalt_Tilfeller"]) < int(df.loc[daybefore, "Totalt_Tilfeller"]):
+            arrow=" \u2B0A"
+        else:
+            arrow=" \uFF1D"
+        return df.loc[date, "Totalt_Tilfeller"]+ arrow
+    except:
+        return "NA" 
 
 
 @app.callback(Output("df_nt", "children"), [Input("my-date-picker-single", "date")])
-def output(date):
-    return df.loc[date, "Nye_tilfeller"]
+def outputnt(date):
+    try:
+        daybefore=dt.strptime(date,"%Y-%m-%d")-timedelta(days=1)
+        if int(df.loc[date, "Nye_tilfeller"]) > int(df.loc[daybefore, "Nye_tilfeller"]):
+            arrow=" \u2B09"
+        elif int(df.loc[date, "Nye_tilfeller"]) < int(df.loc[daybefore, "Nye_tilfeller"]):
+            arrow=" \u2B0A"
+        else:
+            arrow=" \uFF1D"
+        return df.loc[date, "Nye_tilfeller"]+ arrow
+    except:
+        return "NA"
 
 
 @app.callback(Output("df_p", "children"), [Input("my-date-picker-single", "date")])
-def output(date):
-    return df.loc[date, "Pasienter"]
+def outputp(date):
+    try:
+        daybefore=dt.strptime(date,"%Y-%m-%d")-timedelta(days=1)
+        if int(df.loc[date, "Pasienter"]) > int(df.loc[daybefore, "Pasienter"]):
+            arrow=" \u2B09"
+        elif int(df.loc[date, "Pasienter"]) < int(df.loc[daybefore, "Pasienter"]):
+            arrow=" \u2B0A"
+        else:
+            arrow=" \uFF1D"
+        return df.loc[date, "Pasienter"]+ arrow
+    except:
+        return "NA"
 
 
 @app.callback(Output("df_d", "children"), [Input("my-date-picker-single", "date")])
-def output(date):
-    return df.loc[date, "Dødsfall"]
+def outputd(date):
+    try:
+        daybefore=dt.strptime(date,"%Y-%m-%d")-timedelta(days=1)
+        if int(df.loc[date, "Dødsfall"]) > int(df.loc[daybefore, "Dødsfall"]):
+            arrow=" \u2B09"
+        elif int(df.loc[date, "Dødsfall"]) < int(df.loc[daybefore, "Dødsfall"]):
+            arrow=" \u2B0A"
+        else:
+            arrow=" \uFF1D"
+        return df.loc[date, "Dødsfall"]+ arrow
+    except:
+        return "NA"
 
 
 @app.callback(Output("df_ttt", "children"), [Input("my-date-picker-single", "date")])
-def output(date):
-    return df.loc[date, "Totalt_testet"]
+def outputttt(date):
+    try:
+        daybefore=dt.strptime(date,"%Y-%m-%d")-timedelta(days=1)
+        if int(df.loc[date, "Totalt_testet"]) > int(df.loc[daybefore, "Totalt_testet"]):
+            arrow=" \u2B09"
+        elif int(df.loc[date, "Totalt_testet"]) < int(df.loc[daybefore, "Totalt_testet"]):
+            arrow=" \u2B0A"
+        else:
+            arrow=" \uFF1D"
+        return df.loc[date, "Totalt_testet"]+ arrow
+    except:
+        return "NA"
 
 
 @app.callback(
@@ -496,7 +545,7 @@ def barplot(date):
     dash.dependencies.Output("bar-graph2", "figure"),
     [Input("my-date-picker-single", "date")],
 )
-def barplot(date):
+def barplot2(date):
     return go.Figure(
         data=[
             go.Bar(
@@ -552,7 +601,7 @@ def scatter(country):
 @app.callback(
     dash.dependencies.Output("scatter-graph2", "figure"), [Input("country", "value")],
 )
-def scatter(country):
+def scatter2(country):
     return go.Figure(
         data=[
             go.Scatter(
