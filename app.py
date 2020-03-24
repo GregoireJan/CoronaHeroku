@@ -88,7 +88,7 @@ for f in sorted(files):
     # Text scraping
     f = open("./Data/" + f, "r")
     raw = f.read()
-    line = re.sub(r"(\d)\s+(\d)", r"\1\2", raw).split("utbruddsregisteret", 1)[1]
+    line = re.sub(r"(\d)\s+(\d)", r"\1\2", raw)#.split("utbruddsregisteret", 1)[1]
     # if f == '2020-03-16.txt':
     # print(line.split("Fylker",1)[1][50:750])
     # try:
@@ -97,11 +97,12 @@ for f in sorted(files):
     # except:
     #     df_fylke.loc[re.sub(r'.txt', '', f)]=[np.nan]*11
     try:
-        ttilfeller = re.findall(r"(\d+) tilfeller", line)[0]
+        line1=re.search('otalt(.*)hvorav', line).group(1)
+        ttilfeller = re.findall(r"(\d+)", line1)[0]
     except:
         ttilfeller = np.nan
     try:
-        ntilfeller = re.findall(r"hvorav (\d+) tilfeller", line)[0]
+        ntilfeller = re.findall(r"hvorav (\d+)", line)[0]
     except:
         ntilfeller = np.nan
     try:
