@@ -114,9 +114,8 @@ for f in sorted(files):
     except:
         dødsfall = np.nan
     try:
-        testet = re.findall(
-            r"Totalt (\d+) er rapportert testet for Koronavirus ", line
-        )[0]
+        line1=re.search('otalt(.*)testet', line).group(1)
+        testet = re.findall(r"(\d+)", line1)[0]
     except:
         testet = np.nan
     data = {
