@@ -72,8 +72,8 @@ df_age = pd.DataFrame(
     )
 )
 
-for f in sorted(files):
-    print(f)
+for ff in sorted(files):
+    print(ff)
     # # Fylke
     # temp = tabula.read_txt('./'+f,pages='all')
     # try:
@@ -86,7 +86,7 @@ for f in sorted(files):
     # except:
     #     df_age.loc[re.sub(r'.txt', '', f)]=[np.nan]*10
     # Text scraping
-    f = open("./Data/" + f, "r")
+    f = open("./Data/" + ff, "r")
     raw = f.read()
     line = re.sub(r"(\d)\s+(\d)", r"\1\2", raw)#.split("utbruddsregisteret", 1)[1]
     # if f == '2020-03-16.txt':
@@ -96,15 +96,27 @@ for f in sorted(files):
     #     df_fylke.loc[re.sub(r'.txt', '', f)]=list([item for item in one.split()[:40] if item.isdigit()])
     # except:
     #     df_fylke.loc[re.sub(r'.txt', '', f)]=[np.nan]*11
-    try:
-        line1=re.search('otalt(.*)hvorav', line).group(1)
-        ttilfeller = re.findall(r"(\d+)", line1)[0]
-    except:
-        ttilfeller = np.nan
-    try:
-        ntilfeller = re.findall(r"hvorav (\d+)", line)[0]
-    except:
-        ntilfeller = np.nan
+    if dt.strptime(re.sub(".txt", "", ff), "%Y-%m-%d") > dt(2020,3,25):
+        try:
+            line1=re.search('(.*)personer', line).group(1)
+            ttilfeller = re.findall(r"(\d+)", line1)[0]
+        except:
+            ttilfeller = np.nan
+        try:
+            ntilfeller = str(int(ttilfeller)-int(df["Totalt_Tilfeller"][-1:][0]))
+        except:
+            ntilfeller = np.nan
+    else:
+        try:
+            line1=re.search('otalt(.*)hvorav', line).group(1)
+            ttilfeller = re.findall(r"(\d+)", line1)[0]
+        except:
+            ttilfeller = np.nan
+        try:
+            ntilfeller = re.findall(r"hvorav (\d+)", line)[0]
+        except:
+            ntilfeller = np.nan
+    #
     try:
         pasienter = re.findall(r"(\d+) pasienter", line)[0]
     except:
