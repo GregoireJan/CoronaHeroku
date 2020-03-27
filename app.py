@@ -120,7 +120,10 @@ for ff in sorted(files):
     try:
         pasienter = re.findall(r"(\d+) pasienter", line)[0]
     except:
-        pasienter = np.nan
+        try:
+            pasienter = re.findall(r"(\d+)\* pasienter", line)[0]
+        except:
+            pasienter = np.nan
     try:
         dødsfall = re.findall(r"(\d+) dødsfall", line)[0]
     except:
@@ -154,7 +157,7 @@ df = df.set_index(datetime_index)
 
 ### Time Series
 
-df_tsdeath = pd.read_csv("Data/time_series_19-covid-Deaths.csv")
+df_tsdeath = pd.read_csv("Data/time_series_covid19_deaths_global.csv")
 df_tsdeath = df_tsdeath.groupby("Country/Region").sum().reset_index().T[:-1]
 df_tsdeath.columns = df_tsdeath.iloc[0, :]
 df_tsdeath = df_tsdeath[3:]
@@ -174,7 +177,7 @@ df_daysdeath = df_daysdeath.reset_index().drop(columns="index")
 df_daysdeath.index.names = ["Days"]
 df_daysdeath.iloc[0, :] = 0
 
-df_tsconf = pd.read_csv("Data/time_series_19-covid-Confirmed.csv")
+df_tsconf = pd.read_csv("Data/time_series_covid19_confirmed_global.csv")
 df_tsconf = df_tsconf.groupby("Country/Region").sum().reset_index().T[:-1]
 df_tsconf.columns = df_tsconf.iloc[0, :]
 df_tsconf = df_tsconf[3:]
