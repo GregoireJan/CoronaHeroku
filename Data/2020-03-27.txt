@@ -1,0 +1,665 @@
+COVID-19
+
+Dagsrapport
+fredag 27. mars 2020
+
+
+
+81Koronavirus Situasjonsrapport
+
+Dette er en daglig rapport fra Folkehelseinstituttet om Koronavirussituasjonen (covid-19) i
+Norge inkludert en oppdatering fra Norden og resten av verden.
+Dagsrapporten gir et situasjonsbilde basert på data fra meldingssystemet for smittsomme
+sykdommer (MSIS), mikrobiologiske laboratorier, Norsk intensiv register og Sykdomspulsen.
+Rapporten er generert 27.03.2020. Tallene er midlertidige og kan bli endret.
+
+Norge
+
+
+Det er meldt totalt 3581 personer med påvist covid-19 til Meldingssystem for
+smittsomme sykdommer (MSIS). Oppdatert kl 24.00 den 26.03.2020
+
+
+
+Det er 302* pasienter innlagt på sykehus med påvist covid-19 (tall fra
+Helsedirektoratet per 27.03.2020 kl. 12.30).
+
+
+
+Det er totalt 112 personer med bekreftet SARS-CoV-2 som har vært innlagt i
+intensivenhet, av disse er 81 inneliggende. Gjennomsnittsalderen er 59 år (min 14 år
+– max 93 år). Åtte prosent var <40 år, 65 % var 40 – 69 år, og 27 % var 70 år eller
+eldre. 77 % er menn. 50 % er registrert med én eller flere underliggende
+risikofaktorer. (Data fra Norsk intensivregister per 27.03.2020 kl. 08.00).
+*Tall fra Norsk intensivregister over intensivinnleggelser og fra Helsedirektoratet over sykehusinnleggelser samles
+inn på ulike måter, og er derfor ikke direkte sammenlignbare.
+
+
+
+Det er totalt 16 dødsfall varslet til FHI (per 27.03.2020 kl. 08.00).
+Gjennomsnittsalderen for de døde er 84 år (min 69 år – max 94 år).
+
+
+
+Totalt 78 036 personer er rapportert testet for covid-19, pr. 26.03.2020 kl. 15.00. I
+gjennomsnitt har rundt 4% testet positivt gjennom utbruddet så langt, men andelen
+positive har hatt en oppgang de seneste dagene.
+
+1
+
+COVID-19
+
+Dagsrapport
+fredag 27. mars 2020
+Epidemiologiske opplysninger som presenteres i FHIs dagsrapporter baseres nå på data
+meldt til MSIS. Informasjon i MSIS baserer seg på opplysninger fra laboratorier og leger.
+For bedre å beskrive utviklingen i epidemien over tid, har vi nå gått over til å fremstille data
+etter når tilfellene er prøvetatt og ikke når de er meldt. Det er ca. 1-2 dager forsinkelse i
+tiden fra diagnose til registrering i MSIS, og bruk av prøvetakingsdato vil gi en bedre
+beskrivelse av utviklingen over tid.
+Blant de 424 tilfellene som ble meldt til MSIS 26.03.2020, hadde 36 av tilfellene
+prøvetakingsdato 26.03.2020. Figuren under viser antall tilfeller etter prøvetakingsdato
+siden epidemiens start.
+
+Figur. Personer med påvist covid -19 meldt til MSIS, etter prøvetakingsdato.
+
+2
+
+COVID-19
+
+Dagsrapport
+fredag 27. mars 2020
+
+Alder og kjønn
+Gjennomsnittsalder for tilfellene er 47 år, 52 % er menn.
+Tabell. Personer med påvist covid-19 meldt til MSIS, etter aldersgrupper og kjønn.
+
+Alder
+
+Kvinner
+
+Menn
+
+Antall positive
+
+0-9
+
+22
+
+18
+
+40
+
+10-19
+
+61
+
+71
+
+132
+
+20-29
+
+274
+
+185
+
+459
+
+30-39
+
+279
+
+315
+
+594
+
+40-49
+
+338
+
+396
+
+734
+
+50-59
+
+343
+
+426
+
+769
+
+60-69
+
+185
+
+227
+
+412
+
+70-79
+
+115
+
+152
+
+267
+
+80-89
+
+75
+
+63
+
+138
+
+>=90
+
+20
+
+16
+
+36
+
+Total
+
+1712
+
+1869
+
+3581
+
+3
+
+COVID-19
+
+Dagsrapport
+fredag 27. mars 2020
+Figur. Personer med påvist covid-19 meldt til MSIS, etter aldersgrupper og kjønn.
+
+4
+
+COVID-19
+
+Dagsrapport
+fredag 27. mars 2020
+
+Smittested
+1823 tilfeller har blitt smittet i Norge, 1197 tilfeller har blitt smittet utenlands og for 561 er
+smittested ukjent. Av de som er smittet i Norge har 879 vært nærkontakter av et kjent
+smittet tilfelle og 863 har ikke kjent smittevei, 81 er under avklaring.
+Tabell. Personer med påvist covid-19 meldt til MSIS, etter smittested.
+
+Smittested
+
+Antall meldte
+
+Norge
+
+Andel av antall meldte
+(%)
+
+1823
+
+51
+
+Østerrike
+
+628
+
+18
+
+Italia
+
+169
+
+5
+
+Spania
+
+151
+
+4
+
+Storbritannia
+
+65
+
+2
+
+Sveits
+
+39
+
+1
+
+Frankrike
+
+23
+
+1
+
+Tyskland
+
+16
+
+0
+
+USA
+
+16
+
+0
+
+Sverige
+
+9
+
+0
+
+Portugal
+
+8
+
+0
+
+Iran
+
+7
+
+0
+
+66
+
+2
+
+561
+
+16
+
+3581
+
+100
+
+Andre land med få tilfeller
+Ukjent
+Total
+
+5
+
+COVID-19
+
+Dagsrapport
+fredag 27. mars 2020
+Figur. Personer med påvist covid-19 meldt til MSIS, etter smittested.
+
+6
+
+COVID-19
+
+Dagsrapport
+fredag 27. mars 2020
+
+Tabell. Personer med påvist covid-19 meldt til MSIS siste to døgn, totalt og per 100 000
+innbyggere fordelt på fylke.
+Fylke
+
+Tilfeller
+prøvedato
+25.03.20
+
+Tilfeller
+prøvedato
+26.03.20
+
+Totalt antall
+meldte tilfeller
+
+Totalt antall
+tilfeller
+per 100 000
+
+Agder
+
+12
+
+3
+
+148
+
+48,17
+
+Innlandet
+
+2
+
+0
+
+200
+
+53,85
+
+Møre og
+Romsdal
+
+1
+
+0
+
+74
+
+27,90
+
+Nordland
+
+5
+
+0
+
+36
+
+14,92
+
+Oslo
+
+55
+
+10
+
+903
+
+130,21
+
+Rogaland
+
+2
+
+0
+
+277
+
+57,72
+
+Troms og
+Finnmark
+
+16
+
+1
+
+116
+
+47,68
+
+Trøndelag
+
+19
+
+2
+
+261
+
+55,69
+
+Vestfold og
+Telemark
+
+9
+
+3
+
+146
+
+34,81
+
+Vestland
+
+19
+
+9
+
+410
+
+64,41
+
+Viken
+
+42
+
+8
+
+1007
+
+81,13
+
+Ukjent fylke
+
+0
+
+0
+
+3
+
+182
+
+36
+
+3581
+
+Total
+
+7
+
+66,7
+
+COVID-19
+
+Dagsrapport
+fredag 27. mars 2020
+
+Laboratorieovervåking
+Det er stor testaktivitet ved de mikrobiologiske laboratoriene. I uke 12 ble over 33 000
+personer testet, og totalt gjennom utbruddet er minst 78 036 personer testet for covid-19 i
+Norge. Dette er et meget høyt tall i forhold til innbyggertallet.
+Andelen positive prøver har imidlertid vært lavt, men det har vært en økning de siste 7
+dagene, (se figur, kun tall fra laboratorier som rapporterer prøvetakingsdato er tatt med).
+Dette kan skyldes endrede teststrategier og at det er færre helsepersonell som testes nå enn
+tidligere. Endringene har også ført til at litt færre prøver testes pr dag.
+Data for de siste dagene er ikke fullstendige og vil oppdateres.
+Figur. Antall prøver testet for koronavirus og andel positive prøver.
+
+*Tallene for de siste dagene er ikke komplette og vil bli oppdatert etter hvert.
+
+8
+
+COVID-19
+
+Dagsrapport
+fredag 27. mars 2020
+Positivandel varierer noe mellom de forskjellige helseregionene i Norge.
+Tabell. Antall personer testet for covid-19 rapportert inn til FHI i helseregionene i Norge pr.
+26. mars 2020. Kl. 15.00*.
+Antall
+
+Positive
+
+Positive (%)
+
+Helse Sør-Øst
+
+39888
+
+2242
+
+5,62 %
+
+Helse Vest
+
+15765
+
+656
+
+4,16 %
+
+Helse Midt
+
+9134
+
+244
+
+2,67 %
+
+Helse Nord
+
+8078
+
+128
+
+1,58 %
+
+*Tabellen inneholder ikke tall fra private laboratorier som analyserer tester fra hele landet.
+
+Syndrombasert overvåking - Sykdomspulsen
+Konsultasjoner hos primærhelsetjenesten (legekontor og legevakt) - Sykdomspulsen
+Fram til 26.03.2020 har vi mottatt totalt 30 204 konsultasjoner hos lege og legevakt for
+covid-19-lignende symptomer (ICPC-2 diagnosekode R991 opprettet 06.03.2020). De som
+kontakter legen og får denne koden har ikke nødvendigvis koronavirus da de kliniske
+tegnene er like som vanlig forkjølelse og influensa og de er som regel ikke
+laboratorieverifiserte.
+Det er en forsinkelse i systemet som gir en nedgang i grafene de siste dagene, denne
+nedgangen kan endre seg når vi får komplette data.
+Se tabell og figur neste side.
+
+9
+
+COVID-19
+
+Dagsrapport
+fredag 27. mars 2020
+
+Fylke
+
+Totalt antall covid-19
+liknende symptomer
+
+Andel covid-19
+liknende symptomer
+per 1000 befolkning
+
+Agder
+
+1836
+
+5,98
+
+Innlandet
+
+1683
+
+4,53
+
+Møre og Romsdal
+
+1323
+
+4,99
+
+Nordland
+
+637
+
+2,64
+
+Oslo
+
+4334
+
+6,25
+
+Rogaland
+
+3505
+
+7,30
+
+Troms og Finnmark
+
+836
+
+3,44
+
+Trøndelag
+
+1895
+
+4,04
+
+Vestfold og Telemark
+
+3074
+
+7,33
+
+Vestland
+
+4542
+
+7,14
+
+Viken
+
+6539
+
+5,27
+
+10
+
+COVID-19
+
+Dagsrapport
+fredag 27. mars 2020
+
+Norden (basert på data fra ECDC hentet 27.03.2020 kl 06:27)
+ECDC er det europeiske smittevernbyrået – European Centre for Disease Prevention and Control. Lenke:
+https://www.ecdc.europa.eu/en
+
+•
+
+Det er totalt rapportert 8 772 tilfeller i Norden fordelt på Norge (2 916), Sverige (2 510),
+Danmark (1 724), Finland (880), Island (737), Grønland (5).
+
+•
+
+Det er rapportert 93 dødsfall. Landene med dødsfall er Sverige (42), Danmark (34),
+Norge (12), Finland (3), Island (2).
+
+NB! Det er forsinkelse i ECDC sin rapportering, derfor kan tallene være forskjellige fra de
+norske dataene ovenfor.
+
+11
+
+COVID-19
+
+Dagsrapport
+fredag 27. mars 2020
+
+Verden (basert på data fra ECDC hentet 27.03.2020 kl 06:27)
+ECDC er det europeiske smittevernbyrået – European Centre for Disease Prevention and Control. Lenke:
+https://www.ecdc.europa.eu/en
+
+•
+
+Det er totalt rapportert om 467 710 tilfeller i 192 land. Landene med flest tilfeller er
+Kina (81 968), Italia (74 386), USA (69 194), Spania (47 610), Tyskland (36 508), Iran (27
+017), Frankrike (25 233), Sveits (9 714), Storbritannia (9 529), Sør-Korea (9 241).
+
+•
+
+Det er rapportert om 20 947 dødsfall. Landene med flest dødsfall er Italia (7 505),
+Spania (3 434), Kina (3 293), Iran (2 077), Frankrike (1 331), USA (1 050), Storbritannia
+(422), Nederland (356), Tyskland (198), Belgia (178).
+
+12
+
+
