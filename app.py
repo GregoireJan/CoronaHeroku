@@ -29,6 +29,7 @@ pd.options.mode.chained_assignment = None  # default='warn'
 files = [
     f for f in os.listdir("./Data/") if f.endswith(".txt") and f.startswith("2020")
 ]
+# Dataframe columns name
 df = pd.DataFrame(
     columns=[
         "Totalt_Tilfeller",
@@ -72,6 +73,7 @@ df_age = pd.DataFrame(
     )
 )
 
+# Scrap through daily files from FHI
 for ff in sorted(files):
     print(ff)
     # # Fylke
@@ -85,30 +87,26 @@ for ff in sorted(files):
     #     df_age.loc[re.sub(r'.txt', '', f)]=list([item for item in temp if 'Alder' in item][0]["Antall positive"])
     # except:
     #     df_age.loc[re.sub(r'.txt', '', f)]=[np.nan]*10
+    #####
     # Text scraping
     f = open("./Data/" + ff, "r")
     raw = f.read()
-    line = re.sub(r"(\d)\s+(\d)", r"\1\2", raw)#.split("utbruddsregisteret", 1)[1]
-    # if f == '2020-03-16.txt':
-    # print(line.split("Fylker",1)[1][50:750])
-    # try:
-    #     one=line.split("Fylker",1)[1][50:750]
-    #     df_fylke.loc[re.sub(r'.txt', '', f)]=list([item for item in one.split()[:40] if item.isdigit()])
-    # except:
-    #     df_fylke.loc[re.sub(r'.txt', '', f)]=[np.nan]*11
-    if dt.strptime(re.sub(".txt", "", ff), "%Y-%m-%d") > dt(2020,3,25):
+    line = re.sub(r"(\d)\s+(\d)", r"\1\2", raw)
+    # Get total cases
+    if dt.strptime(re.sub(".txt", "", ff), "%Y-%m-%d") > dt(2020, 3, 25):
         try:
-            line1=re.search('(.*)personer', line).group(1)
+            line1 = re.search("(.*)personer", line).group(1)
             ttilfeller = re.findall(r"(\d+)", line1)[0]
         except:
             ttilfeller = np.nan
         try:
-            ntilfeller = str(int(ttilfeller)-int(df["Totalt_Tilfeller"][-1:][0]))
+            ntilfeller = str(int(ttilfeller) - int(df["Totalt_Tilfeller"][-1:][0]))
         except:
             ntilfeller = np.nan
     else:
+        # Get new cases
         try:
-            line1=re.search('otalt(.*)hvorav', line).group(1)
+            line1 = re.search("otalt(.*)hvorav", line).group(1)
             ttilfeller = re.findall(r"(\d+)", line1)[0]
         except:
             ttilfeller = np.nan
@@ -116,7 +114,7 @@ for ff in sorted(files):
             ntilfeller = re.findall(r"hvorav (\d+)", line)[0]
         except:
             ntilfeller = np.nan
-    #
+    # Get total patients
     try:
         pasienter = re.findall(r"(\d+) pasienter", line)[0]
     except:
@@ -124,15 +122,19 @@ for ff in sorted(files):
             pasienter = re.findall(r"(\d+)\* pasienter", line)[0]
         except:
             pasienter = np.nan
+    # Get total deads
     try:
         dødsfall = re.findall(r"(\d+) dødsfall", line)[0]
     except:
         dødsfall = np.nan
+    # Get total tested
     try:
-        line1=re.search('otalt(.*)testet', line).group(1)
+        line1 = re.search("otalt(.*)testet", line).group(1)
         testet = re.findall(r"(\d+)", line1)[0]
     except:
         testet = np.nan
+    ###############
+    # Append dataframe df
     data = {
         "Totalt_Tilfeller": [ttilfeller],
         "Nye_tilfeller": [ntilfeller],
@@ -152,15 +154,21 @@ for ff in sorted(files):
             ],
         )
     )
+# Get timestamp index for df
 datetime_index = pd.DatetimeIndex([re.sub(r".txt", "", f) for f in sorted(files)])
 df = df.set_index(datetime_index)
 
-### Time Series
+###################################################################################
+### Time Series from John Hopkins
 
+# Load
 df_tsdeath = pd.read_csv("Data/time_series_covid19_deaths_global.csv")
+# Group by contry and transpose
 df_tsdeath = df_tsdeath.groupby("Country/Region").sum().reset_index().T[:-1]
+# Fix column name
 df_tsdeath.columns = df_tsdeath.iloc[0, :]
 df_tsdeath = df_tsdeath[3:]
+# Get timestamp index
 datetime_index = pd.DatetimeIndex(df_tsdeath.index)
 df_tsdeath = df_tsdeath.set_index(datetime_index)
 
@@ -169,14 +177,18 @@ df_daysdeath = df_tsdeath.copy()
 n = 1
 for col in df_daysdeath.columns:
     if df_daysdeath[col].max() > n:
+        # Shift column to have the first row as the first date when threshold is met
         firsdeath = df_daysdeath.index[df_daysdeath[col] > n][0]
         df_daysdeath[col] = df_daysdeath[col].shift(-(firsdeath - dt(2020, 1, 22)).days)
-        # df_daysdeath[col] = (100 * (df_daysdeath[col] / (df_daysdeath[col].shift(1).replace(0, 1))) - 100)
+        # Get ratio with day 0
         df_daysdeath[col] = df_daysdeath[col] / (df_daysdeath[col][0])
+# Reset index
 df_daysdeath = df_daysdeath.reset_index().drop(columns="index")
 df_daysdeath.index.names = ["Days"]
+# Ratio=0 for day 0
 df_daysdeath.iloc[0, :] = 0
 
+# Same as above for confirmed cases
 df_tsconf = pd.read_csv("Data/time_series_covid19_confirmed_global.csv")
 df_tsconf = df_tsconf.groupby("Country/Region").sum().reset_index().T[:-1]
 df_tsconf.columns = df_tsconf.iloc[0, :]
@@ -196,6 +208,7 @@ for col in df_daysconf.columns:
 df_daysconf = df_daysconf.reset_index().drop(columns="index")
 df_daysconf.index.names = ["Days"]
 df_daysconf.iloc[0, :] = 0
+
 
 def convert_options(optionlabels, optionvals):
     return [
@@ -443,13 +456,18 @@ app.layout = html.Div(
                             ),
                         ),
                         html.Div([dcc.Graph(id="scatter-graph", figure={"data": []},)]),
-                        html.Div([dcc.Graph(id="scatter-graph2", figure={"data": []},)]),
+                        html.Div(
+                            [dcc.Graph(id="scatter-graph2", figure={"data": []},)]
+                        ),
                     ],
                     align="center",
                 ),
             ]
         ),
-        html.Footer(children=['© 2020 Copyright / Data from FHI & John Hopkins University'],style={"textAlign": "center"})
+        html.Footer(
+            children=["© 2020 Copyright / Data from FHI & John Hopkins University"],
+            style={"textAlign": "center"},
+        ),
     ]
 )
 
@@ -457,29 +475,35 @@ app.layout = html.Div(
 @app.callback(Output("df_tt", "children"), [Input("my-date-picker-single", "date")])
 def outputtt(date):
     try:
-        daybefore=dt.strptime(date,"%Y-%m-%d")-timedelta(days=1)
-        if int(df.loc[date, "Totalt_Tilfeller"]) > int(df.loc[daybefore, "Totalt_Tilfeller"]):
-            arrow=" \u2B09"
-        elif int(df.loc[date, "Totalt_Tilfeller"]) < int(df.loc[daybefore, "Totalt_Tilfeller"]):
-            arrow=" \u2B0A"
+        daybefore = dt.strptime(date, "%Y-%m-%d") - timedelta(days=1)
+        if int(df.loc[date, "Totalt_Tilfeller"]) > int(
+            df.loc[daybefore, "Totalt_Tilfeller"]
+        ):
+            arrow = " \u2B09"
+        elif int(df.loc[date, "Totalt_Tilfeller"]) < int(
+            df.loc[daybefore, "Totalt_Tilfeller"]
+        ):
+            arrow = " \u2B0A"
         else:
-            arrow=" \uFF1D"
-        return df.loc[date, "Totalt_Tilfeller"]+ arrow
+            arrow = " \uFF1D"
+        return df.loc[date, "Totalt_Tilfeller"] + arrow
     except:
-        return "NA" 
+        return "NA"
 
 
 @app.callback(Output("df_nt", "children"), [Input("my-date-picker-single", "date")])
 def outputnt(date):
     try:
-        daybefore=dt.strptime(date,"%Y-%m-%d")-timedelta(days=1)
+        daybefore = dt.strptime(date, "%Y-%m-%d") - timedelta(days=1)
         if int(df.loc[date, "Nye_tilfeller"]) > int(df.loc[daybefore, "Nye_tilfeller"]):
-            arrow=" \u2B09"
-        elif int(df.loc[date, "Nye_tilfeller"]) < int(df.loc[daybefore, "Nye_tilfeller"]):
-            arrow=" \u2B0A"
+            arrow = " \u2B09"
+        elif int(df.loc[date, "Nye_tilfeller"]) < int(
+            df.loc[daybefore, "Nye_tilfeller"]
+        ):
+            arrow = " \u2B0A"
         else:
-            arrow=" \uFF1D"
-        return df.loc[date, "Nye_tilfeller"]+ arrow
+            arrow = " \uFF1D"
+        return df.loc[date, "Nye_tilfeller"] + arrow
     except:
         return "NA"
 
@@ -487,14 +511,14 @@ def outputnt(date):
 @app.callback(Output("df_p", "children"), [Input("my-date-picker-single", "date")])
 def outputp(date):
     try:
-        daybefore=dt.strptime(date,"%Y-%m-%d")-timedelta(days=1)
+        daybefore = dt.strptime(date, "%Y-%m-%d") - timedelta(days=1)
         if int(df.loc[date, "Pasienter"]) > int(df.loc[daybefore, "Pasienter"]):
-            arrow=" \u2B09"
+            arrow = " \u2B09"
         elif int(df.loc[date, "Pasienter"]) < int(df.loc[daybefore, "Pasienter"]):
-            arrow=" \u2B0A"
+            arrow = " \u2B0A"
         else:
-            arrow=" \uFF1D"
-        return df.loc[date, "Pasienter"]+ arrow
+            arrow = " \uFF1D"
+        return df.loc[date, "Pasienter"] + arrow
     except:
         return "NA"
 
@@ -502,14 +526,14 @@ def outputp(date):
 @app.callback(Output("df_d", "children"), [Input("my-date-picker-single", "date")])
 def outputd(date):
     try:
-        daybefore=dt.strptime(date,"%Y-%m-%d")-timedelta(days=1)
+        daybefore = dt.strptime(date, "%Y-%m-%d") - timedelta(days=1)
         if int(df.loc[date, "Dødsfall"]) > int(df.loc[daybefore, "Dødsfall"]):
-            arrow=" \u2B09"
+            arrow = " \u2B09"
         elif int(df.loc[date, "Dødsfall"]) < int(df.loc[daybefore, "Dødsfall"]):
-            arrow=" \u2B0A"
+            arrow = " \u2B0A"
         else:
-            arrow=" \uFF1D"
-        return df.loc[date, "Dødsfall"]+ arrow
+            arrow = " \uFF1D"
+        return df.loc[date, "Dødsfall"] + arrow
     except:
         return "NA"
 
@@ -517,14 +541,16 @@ def outputd(date):
 @app.callback(Output("df_ttt", "children"), [Input("my-date-picker-single", "date")])
 def outputttt(date):
     try:
-        daybefore=dt.strptime(date,"%Y-%m-%d")-timedelta(days=1)
+        daybefore = dt.strptime(date, "%Y-%m-%d") - timedelta(days=1)
         if int(df.loc[date, "Totalt_testet"]) > int(df.loc[daybefore, "Totalt_testet"]):
-            arrow=" \u2B09"
-        elif int(df.loc[date, "Totalt_testet"]) < int(df.loc[daybefore, "Totalt_testet"]):
-            arrow=" \u2B0A"
+            arrow = " \u2B09"
+        elif int(df.loc[date, "Totalt_testet"]) < int(
+            df.loc[daybefore, "Totalt_testet"]
+        ):
+            arrow = " \u2B0A"
         else:
-            arrow=" \uFF1D"
-        return df.loc[date, "Totalt_testet"]+ arrow
+            arrow = " \uFF1D"
+        return df.loc[date, "Totalt_testet"] + arrow
     except:
         return "NA"
 
@@ -609,8 +635,20 @@ def scatter(country):
             xaxis={"title": "Days", "range": [-1, 30], "tickmode": "linear",},
             yaxis={"title": "Growth Rate X (compared to Day 0)"},
             plot_bgcolor="rgb(255,255,255)",
+            annotations=[
+                go.layout.Annotation(
+                    text="Day 0 = first day to reach 50 total cases",
+                    align="center",
+                    showarrow=False,
+                    xref="paper",
+                    yref="paper",
+                    x=0.5,
+                    y=1.15,
+                )
+            ],
         ),
     )
+
 
 @app.callback(
     dash.dependencies.Output("scatter-graph2", "figure"), [Input("country", "value")],
@@ -632,14 +670,21 @@ def scatter2(country):
             ),
         ],
         layout=go.Layout(
-            title={
-                "text": "Growth Rate for Deaths",
-                "font": {"size": 30},
-                "x": 0.5,
-            },
+            title={"text": "Growth Rate for Deaths", "font": {"size": 30}, "x": 0.5,},
             xaxis={"title": "Days", "range": [-1, 30], "tickmode": "linear",},
             yaxis={"title": "Growth Rate X (compared to Day 0)"},
             plot_bgcolor="rgb(255,255,255)",
+            annotations=[
+                go.layout.Annotation(
+                    text="Day 0 = first day with one dead person",
+                    align="center",
+                    showarrow=False,
+                    xref="paper",
+                    yref="paper",
+                    x=0.5,
+                    y=1.15,
+                )
+            ],
         ),
     )
 
