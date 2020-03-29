@@ -119,7 +119,7 @@ for ff in sorted(files):
         pasienter = re.findall(r"(\d+) pasienter", line)[0]
     except:
         try:
-            pasienter = re.findall(r"(\d+)\* pasienter", line)[0]
+            pasienter = re.findall(r"(\d+)\*", line)[0]
         except:
             pasienter = np.nan
     # Get total deads
