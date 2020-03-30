@@ -34,7 +34,7 @@ df = pd.DataFrame(
     columns=[
         "Totalt_Tilfeller",
         "Nye_tilfeller",
-        "Pasienter",
+        # "Pasienter",
         "Dødsfall",
         "Totalt_testet",
     ]
@@ -115,13 +115,13 @@ for ff in sorted(files):
         except:
             ntilfeller = np.nan
     # Get total patients
-    try:
-        pasienter = re.findall(r"(\d+) pasienter", line)[0]
-    except:
-        try:
-            pasienter = re.findall(r"(\d+)\*", line)[0]
-        except:
-            pasienter = np.nan
+    # try:
+    #     pasienter = re.findall(r"(\d+) pasienter", line)[0]
+    # except:
+    #     try:
+    #         pasienter = re.findall(r"(\d+)\*", line)[0]
+    #     except:
+    #         pasienter = np.nan
     # Get total deads
     try:
         dødsfall = re.findall(r"(\d+) dødsfall", line)[0]
@@ -138,7 +138,7 @@ for ff in sorted(files):
     data = {
         "Totalt_Tilfeller": [ttilfeller],
         "Nye_tilfeller": [ntilfeller],
-        "Pasienter": [pasienter],
+        # "Pasienter": [pasienter],
         "Dødsfall": [dødsfall],
         "Totalt_testet": [testet],
     }
@@ -148,7 +148,7 @@ for ff in sorted(files):
             columns=[
                 "Totalt_Tilfeller",
                 "Nye_tilfeller",
-                "Pasienter",
+                # "Pasienter",
                 "Dødsfall",
                 "Totalt_testet",
             ],
@@ -157,6 +157,12 @@ for ff in sorted(files):
 # Get timestamp index for df
 datetime_index = pd.DatetimeIndex([re.sub(r".txt", "", f) for f in sorted(files)])
 df = df.set_index(datetime_index)
+
+# Retreive patients from Helsedirektorat csv
+df_pasienter=pd.read_csv("./Data/data.csv")
+df["Pasienter"] = df_pasienter["Verdi"][1:].values
+
+print(df)
 
 ###################################################################################
 ### Time Series from John Hopkins
@@ -518,7 +524,7 @@ def outputp(date):
             arrow = " \u2B0A"
         else:
             arrow = " \uFF1D"
-        return df.loc[date, "Pasienter"] + arrow
+        return str(df.loc[date, "Pasienter"]) + arrow
     except:
         return "NA"
 
