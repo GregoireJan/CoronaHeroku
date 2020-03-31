@@ -34,7 +34,6 @@ df = pd.DataFrame(
     columns=[
         "Totalt_Tilfeller",
         "Nye_tilfeller",
-        # "Pasienter",
         "Dødsfall",
         "Totalt_testet",
     ]
@@ -114,15 +113,6 @@ for ff in sorted(files):
             ntilfeller = re.findall(r"hvorav (\d+)", line)[0]
         except:
             ntilfeller = np.nan
-    # Get total patients
-    # try:
-    #     pasienter = re.findall(r"(\d+) pasienter", line)[0]
-    # except:
-    #     try:
-    #         pasienter = re.findall(r"(\d+)\*", line)[0]
-    #     except:
-    #         pasienter = np.nan
-    # Get total deads
     try:
         dødsfall = re.findall(r"(\d+) dødsfall", line)[0]
     except:
@@ -138,7 +128,6 @@ for ff in sorted(files):
     data = {
         "Totalt_Tilfeller": [ttilfeller],
         "Nye_tilfeller": [ntilfeller],
-        # "Pasienter": [pasienter],
         "Dødsfall": [dødsfall],
         "Totalt_testet": [testet],
     }
@@ -148,7 +137,6 @@ for ff in sorted(files):
             columns=[
                 "Totalt_Tilfeller",
                 "Nye_tilfeller",
-                # "Pasienter",
                 "Dødsfall",
                 "Totalt_testet",
             ],
@@ -161,8 +149,6 @@ df = df.set_index(datetime_index)
 # Retreive patients from Helsedirektorat csv
 df_pasienter=pd.read_csv("./Data/data.csv")
 df["Pasienter"] = df_pasienter["Verdi"][1:].values
-
-print(df)
 
 ###################################################################################
 ### Time Series from John Hopkins
@@ -183,7 +169,6 @@ df_daysdeath = df_tsdeath.copy()
 n = 1
 for col in df_daysdeath.columns:
     if df_daysdeath[col].max() > n:
-        # Shift column to have the first row as the first date when threshold is met
         firsdeath = df_daysdeath.index[df_daysdeath[col] > n][0]
         df_daysdeath[col] = df_daysdeath[col].shift(-(firsdeath - dt(2020, 1, 22)).days)
         # Get ratio with day 0
@@ -209,7 +194,6 @@ for col in df_daysconf.columns:
     if df_daysconf[col].max() > n:
         firsconf = df_daysconf.index[df_daysconf[col] > n][0]
         df_daysconf[col] = df_daysconf[col].shift(-(firsconf - dt(2020, 1, 22)).days)
-        # df_daysconf[col] = 100*(df_daysconf[col]/(df_daysconf[col].shift(1).replace(0, 1)))-100
         df_daysconf[col] = df_daysconf[col] / (df_daysconf[col][0])
 df_daysconf = df_daysconf.reset_index().drop(columns="index")
 df_daysconf.index.names = ["Days"]
@@ -329,7 +313,6 @@ app.layout = html.Div(
                             children="Total cases",
                             style={
                                 "color": "black",
-                                # "font-weight": "bold",
                                 "font-size": "30px",
                                 "textAlign": "center",
                             },
@@ -351,7 +334,6 @@ app.layout = html.Div(
                             children="New cases",
                             style={
                                 "color": "black",
-                                # "font-weight": "bold",
                                 "font-size": "30px",
                                 "textAlign": "center",
                             },
@@ -373,7 +355,6 @@ app.layout = html.Div(
                             children="Patients hospitalized",
                             style={
                                 "color": "black",
-                                # "font-weight": "bold",
                                 "font-size": "30px",
                                 "textAlign": "center",
                             },
@@ -395,7 +376,6 @@ app.layout = html.Div(
                             children="Deaths",
                             style={
                                 "color": "black",
-                                # "font-weight": "bold",
                                 "font-size": "30px",
                                 "textAlign": "center",
                             },
@@ -417,7 +397,6 @@ app.layout = html.Div(
                             children="Total Corona tested",
                             style={
                                 "color": "black",
-                                # "font-weight": "bold",
                                 "font-size": "30px",
                                 "textAlign": "center",
                             },
