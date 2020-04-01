@@ -557,7 +557,7 @@ def barplot(date):
             title={"text": "Total cases", "font": {"size": 30}, "x": 0.5},
             xaxis={
                 "title": "",
-                "range": [dt(2020, 3, 1), dt(2020, 4, 1)],
+                "range": [dt(2020, 3, 1), dt(2020, 4, 15)],
                 "tickmode": "linear",
             },
             yaxis={"title": "Total cases"},
@@ -583,7 +583,7 @@ def barplot2(date):
             title={"text": "New cases", "font": {"size": 30}, "x": 0.5},
             xaxis={
                 "title": "",
-                "range": [dt(2020, 3, 1), dt(2020, 4, 1)],
+                "range": [dt(2020, 3, 1), dt(2020, 4, 15)],
                 "tickmode": "linear",
             },
             yaxis={"title": "New cases"},
@@ -617,7 +617,7 @@ def scatter(country):
                 "font": {"size": 30},
                 "x": 0.5,
             },
-            xaxis={"title": "Days", "range": [-1, 30], "tickmode": "linear",},
+            xaxis={"title": "Days", "range": [-1, 45], "tickmode": "linear",},
             yaxis={"title": "Growth Rate X (compared to Day 0)"},
             plot_bgcolor="rgb(255,255,255)",
             annotations=[
@@ -656,7 +656,7 @@ def scatter2(country):
         ],
         layout=go.Layout(
             title={"text": "Growth Rate for Deaths", "font": {"size": 30}, "x": 0.5,},
-            xaxis={"title": "Days", "range": [-1, 30], "tickmode": "linear",},
+            xaxis={"title": "Days", "range": [-1, 45], "tickmode": "linear",},
             yaxis={"title": "Growth Rate X (compared to Day 0)"},
             plot_bgcolor="rgb(255,255,255)",
             annotations=[
