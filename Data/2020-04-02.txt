@@ -1,0 +1,696 @@
+COVID-19
+
+Dagsrapport
+torsdag 2. april 2020
+
+Koronavirus Situasjonsrapport
+
+Dette er en daglig rapport fra Folkehelseinstituttet om koronavirussituasjonen (covid-19) i
+Norge inkludert en oppdatering fra Norden og resten av verden. Dagsrapporten gir et
+situasjonsbilde basert på data fra Meldingssystem for smittsomme sykdommer (MSIS),
+mikrobiologiske laboratorier, Norsk intensivregister og Sykdomspulsen.
+Rapporten er generert 02.04.2020. Tallene er midlertidige og kan bli endret.
+
+Norge
+•
+
+Det er meldt totalt 4 935 personer med påvist covid-19 til Meldingssystem for
+smittsomme sykdommer (MSIS). Oppdatert kl 24.00 den 01.04.2020.
+
+•
+
+For antallet innlagt på sykehus, se Helsedirektoratets nettsider: Antall innlagte
+pasienter på sykehus med påvist covid-19
+
+•
+
+Det er totalt 180 personer med bekreftet SARS-CoV-2 som har vært innlagt i
+intensivenhet*, av disse er 109 inneliggende.
+
+•
+
+Gjennomsnittsalderen for de 180 bekreftede pasientene er 61 år, og 76 % er menn.
+Aldersfordelingen er: 0-39 år: 4; 40-49 år: 26; 50-59 år: 37; 60-69 år: 59; 70-79 år: 38; 80
+år eller eldre: 8. (Norsk intensivregister per 02.04.2020 kl. 08.00)
+*Tall fra Norsk intensivregister over intensivinnleggelser og tall fra Helsedirektoratet over sykehusinnleggelser samles
+inn på ulike måter, og er derfor ikke direkte sammenlignbare.
+
+•
+
+Det er totalt 42 dødsfall varslet til Folkehelseinstituttet (per 02.04.2020 kl.08.00).
+Gjennomsnittsalderen for de døde er 83 år (fra 51 til 99 år) og andelen kvinner og menn
+er lik
+
+•
+
+Totalt 98 587 personer er rapportert testet for covid-19, per 01.04.2020 kl. 15.00. I
+gjennomsnitt har 5 % testet positivt gjennom utbruddet så langt. Andelen positive har
+gått litt opp de siste dagene.
+
+1
+
+COVID-19
+
+Dagsrapport
+torsdag 2. april 2020
+
+Antall med påvist covid-19
+Epidemiologiske opplysninger som presenteres i Folkehelseinstituttets dagsrapporter,
+baseres på data meldt til MSIS. Informasjon i MSIS baserer seg på opplysninger fra
+laboratorier og leger.
+For bedre å beskrive utviklingen i epidemien over tid, har vi fra 25.03.2020 gått over til å
+fremstille data etter når covid-19-testen ble tatt og ikke etter dato for melding til MSIS. Det
+er ca. 1-2 dager forsinkelse i tiden fra prøvetaking til registrering i MSIS.
+Blant de 280 tilfellene som ble meldt til MSIS 01.04.2020, hadde bare 40 av tilfellene
+prøvetakingsdato 01.04.2020. Figuren under viser antall tilfeller etter prøvetakingsdato
+siden epidemiens start. Antall tilfeller per dag vil justeres, også tilbake i tid, ettersom nye
+tilfeller blir meldt til MSIS.
+
+Figur 1. Personer med påvist covid-19 meldt til MSIS, etter prøvetakingsdato.
+*Det er gjennomsnittlig 1-2 dagers forsinkelse i tiden fra prøvetaking til registrering i MSIS (markert med rød
+stjerne).
+
+2
+
+COVID-19
+
+Dagsrapport
+torsdag 2. april 2020
+
+Alder og kjønn
+Gjennomsnittsalder for tilfellene er 48 år, 51 % er menn.
+Tabell 1. Personer med påvist covid-19 meldt til MSIS, etter aldersgrupper og kjønn.
+Alder
+
+Kvinner
+
+Menn
+
+Antall positive
+
+0-9
+
+26
+
+23
+
+49
+
+10-19
+
+95
+
+98
+
+193
+
+20-29
+
+393
+
+256
+
+649
+
+30-39
+
+385
+
+412
+
+797
+
+40-49
+
+458
+
+497
+
+955
+
+50-59
+
+461
+
+569
+
+1 030
+
+60-69
+
+276
+
+328
+
+604
+
+70-79
+
+170
+
+217
+
+387
+
+80-89
+
+116
+
+93
+
+209
+
+>= 90
+
+39
+
+23
+
+62
+
+Totalt
+
+2 419
+
+2 516
+
+4 935
+
+Figur 2. Personer med påvist covid-19 meldt til MSIS, etter aldersgrupper og kjønn.
+
+3
+
+COVID-19
+
+Dagsrapport
+torsdag 2. april 2020
+
+Fylker
+Tabell 2. Personer med påvist covid-19 meldt til MSIS siste to døgn, totalt og per 100 000
+innbyggere fordelt på fylke.
+Tilfeller
+prøvedato
+31.03.2020
+
+Tilfeller
+prøvedato
+01.04.2020
+
+Totalt
+antall
+meldte
+tilfeller
+
+Totalt
+antall
+tilfeller per
+100 000
+
+Agder
+
+16
+
+1
+
+207
+
+67.4
+
+Innlandet
+
+14
+
+1
+
+344
+
+92.6
+
+Møre og
+Romsdal
+
+0
+
+0
+
+95
+
+35.8
+
+Nordland
+
+3
+
+3
+
+68
+
+28.2
+
+Oslo
+
+61
+
+13
+
+1 379
+
+198.8
+
+Rogaland
+
+0
+
+0
+
+332
+
+69.2
+
+Troms og
+Finnmark
+
+5
+
+1
+
+164
+
+67.4
+
+Trøndelag
+
+8
+
+2
+
+340
+
+72.5
+
+Vestfold og
+Telemark
+
+5
+
+2
+
+190
+
+45.3
+
+Vestland
+
+4
+
+3
+
+510
+
+80.1
+
+Viken
+
+39
+
+14
+
+1 306
+
+105.2
+
+Totalt
+
+155
+
+40
+
+4 935
+
+91.9
+
+Smittested
+
+4
+
+COVID-19
+
+Dagsrapport
+torsdag 2. april 2020
+
+Figur 3. Personer i Norge med covid-19 (venstre y-akse) og per 100 000 (høyre y-akse). Det er
+1-2 dager forsinkelse i tiden fra prøvetaking til registrering i MSIS (markert med rød stjerne).
+
+5
+
+COVID-19
+
+Dagsrapport
+torsdag 2. april 2020
+
+Smittested
+2 738 tilfeller har blitt smittet i Norge, 1 456 tilfeller har blitt smittet utenlands og for 741 er
+smittested ukjent, se tabellen nedenfor og figuren neste side. Av de som er smittet i Norge,
+har 1 336 vært nærkontakter av et kjent smittet tilfelle, 1 304 har ikke kjent smittevei og 97
+er under avklaring.
+Tabell 3. Personer med påvist covid-19 meldt til MSIS, etter smittested.
+Smittested
+
+Antall meldte
+Norge
+
+Andel av antall meldte
+
+2 738
+
+55
+
+Østerrike
+
+669
+
+14
+
+Spania
+
+272
+
+6
+
+Italia
+
+172
+
+3
+
+Storbritannia
+
+96
+
+2
+
+Sveits
+
+45
+
+1
+
+Frankrike
+
+34
+
+1
+
+USA
+
+28
+
+1
+
+Tyskland
+
+20
+
+0
+
+Sverige
+
+12
+
+0
+
+Portugal
+
+11
+
+0
+
+Iran
+
+7
+
+0
+
+Andre land med få tilfeller
+
+90
+
+2
+
+Ukjent
+
+741
+
+15
+
+Totalt
+
+4 935
+
+100
+
+6
+
+COVID-19
+
+Dagsrapport
+torsdag 2. april 2020
+
+Figur 4. Personer med påvist covid-19 meldt til MSIS, etter smittested.
+*Det er gjennomsnittlig 1-2 dager forsinkelse i tiden fra prøvetaking til registrering i MSIS (markert med rød
+stjerne).
+
+7
+
+COVID-19
+
+Dagsrapport
+torsdag 2. april 2020
+
+Fødeland
+Blant de meldte tilfellene av covid-19 i Norge hvor fødeland er kjent (4 860) er det 922
+personer som er født utenfor Norge (19 %). Blant disse er det flest personer med fødeland
+Somalia (225), Sverige (47), Pakistan (47), Irak (42), Iran (40), Danmark (34) og Filippinene
+(34).
+Blant tilfellene som er kjent smittet i Norge, og hvor fødeland er kjent (2 699), er det 571
+personer (21 %) som er født utenfor Norge. Blant disse er det flest personer med fødeland
+Somalia (135), Irak (31), Sverige (25), Pakistan (30), Iran (26), Filippinene (20), Danmark (20).
+Fordeling av meldte tilfeller med covid-19 på kjønn, alder, smittested og fødeland er i stor
+grad et utrykk for hvor mange og hvem man tester. Det representerer derfor ikke den reelle
+forekomsten og distribusjon av tilfeller med covid-19 i befolkningen. Folkehelseinstituttet
+har ikke informasjon om årsak til testing.
+
+Laboratorieovervåking
+Totalt 98 587 personer er rapportert testet for covid-19, pr. 01.04.2020 kl. 15.00. I
+gjennomsnitt har rundt 5 % testet positivt gjennom utbruddet så langt.
+Etter en økning i uke 12 har andelen positive prøver holdt seg rundt 8 – 9 % de siste dagene
+(se figur nedenfor, kun tall fra laboratorier som rapporterer prøvetakingsdato er tatt med).
+Dette kan skyldes endrede teststrategier, og at det er færre helsepersonell som testes nå
+enn tidligere. Endringene har også ført til at litt færre prøver testes per dag. Data for de siste
+dagene er ikke fullstendige og vil oppdateres.
+Andelen positive prøver varierer noe mellom de forskjellige helseregionene i Norge, se tabell
+nedenfor.
+Tabell 4. Antall personer testet for covid-19 rapportert inn til Folkehelseinstituttet, fordelt på
+helseregioner pr. 01.04.2020 Kl. 15.00.
+*Tabellen inneholder ikke tall fra private laboratorier som analyserer tester fra hele landet.
+
+Antall
+
+Positive
+
+Positive (%)
+
+Region Sør-Øst
+
+49 202
+
+3 154
+
+6,41 %
+
+Region Vest
+
+18 681
+
+791
+
+4,23 %
+
+Region Midt
+
+12 579
+
+415
+
+3,30 %
+
+Region Nord
+
+10 011
+
+215
+
+2,15 %
+
+8
+
+COVID-19
+
+Dagsrapport
+torsdag 2. april 2020
+
+Figur 5. Antall prøver testet for covid-19 og andel positive prøver. Figuren inneholder kun tall
+fra laboratorier som har rapporter der prøvetakingsdato er tatt med. Siste dagers
+rapporteringer er ufullstendige og vil oppdateres. Noen prøver analysert med to forskjellige
+analysemetoder har blitt korrigert, og figuren avviker derfor noe fra tidligere figurer.
+
+Konsultasjoner ved legekontor og legevakt - Sykdomspulsen
+Fram til 01.04.2020 har Folkehelseinstituttet mottatt informasjon om totalt 72 145
+konsultasjoner hos lege og legevakt for covid-19-lignende symptomer (ICPC-2 diagnosekode
+R991 opprettet 06.03.2020). De som kontakter legen og får denne koden, har ikke
+nødvendigvis koronavirus, da de kliniske tegnene kan likne vanlig forkjølelse og influensa. I
+tillegg har pasientene som regel ikke et laboratorieverifisert prøvesvar ved konsultasjon.
+Dataene må tolkes med forsiktighet da endrede vaner i befolkningen som for eksempel
+legesøkning påvirker tallene.
+Det er en forsinkelse i systemet, derfor kan grafene endre seg når vi får komplette data.
+Sykdomspulsen (NorSySS) er et syndrombasert overvåkningssystem.
+
+9
+
+COVID-19
+
+Dagsrapport
+torsdag 2. april 2020
+
+Figur 6. Luftveiskonsultasjoner som andel av konsultasjoner hos lege og legevakt. Kilde:
+Sykdomspulsen, Folkehelseinstituttet.
+Tabell 5. Tall fra Sykdomspulsen etter fylke.
+Totalt antall covid-19
+liknende symptomer
+
+Andel covid-19 liknende
+symptomer per 1000
+befolkning
+
+Agder
+
+4 671
+
+15,20
+
+Innlandet
+
+4 082
+
+10,99
+
+Møre og Romsdal
+
+3 339
+
+12,59
+
+Nordland
+
+1 737
+
+7,20
+
+Oslo
+
+10 946
+
+15,78
+
+Rogaland
+
+7 653
+
+15,95
+
+Troms og Finnmark
+
+2 245
+
+9,23
+
+Trøndelag
+
+4 292
+
+9,16
+
+Vestfold og Telemark
+
+6 952
+
+16,58
+
+Vestland
+
+8 706
+
+13,68
+
+Viken
+
+17 522
+
+14,12
+
+Fylke
+
+10
+
+COVID-19
+
+Dagsrapport
+torsdag 2. april 2020
+
+Norden (basert på data fra ECDC hentet 02.04.2020 kl 08:00)
+ECDC er det europeiske smittevernbyrået – European Centre for Disease Prevention and
+Control. Lenke: https://www.ecdc.europa.eu/en
+•
+
+Det er totalt rapportert 14 271 tilfeller i Norden fordelt på Norge (4 447), Sverige (4
+435), Danmark (2 860), Finland (1 384), Island (1 135), Grønland (10).
+
+•
+
+Det er rapportert 317 dødsfall. Landene med dødsfall er Sverige (180), Danmark (90),
+Norge (28), Finland (17), Island (2), Grønland (0).
+
+Det er forsinkelse i ECDC sin rapportering, derfor kan tallene være forskjellige fra de norske
+dataene ovenfor.
+
+Figur 7. Tilfeller i Norden. Kilde: ECDC
+
+11
+
+COVID-19
+
+Dagsrapport
+torsdag 2. april 2020
+
+Verden (basert på data fra ECDC hentet 02.04.2020 kl 07:52 kl
+08:00)
+ECDC er det europeiske smittevernbyrået – European Centre for Disease Prevention and
+Control. Lenke: https://www.ecdc.europa.eu/en
+•
+
+Det er totalt rapportert om 853 200 tilfeller i 202 land. Landene med flest tilfeller er
+USA (189 618), Italia (105 792), Spania (94 417), Kina (82 295), Tyskland (67 366),
+Frankrike (52 128), Iran (44 606), Storbritannia (25 150), Sveits (16 108), Turkey (15
+422).
+
+•
+
+Det er rapportert om 41 887 dødsfall. Landene med flest dødsfall er Italia (12 430),
+Spania (8 189), USA (4 079), Frankrike (3 523), Kina (3 310), Iran (2 898), Storbritannia (1
+789), Nederland (1039), Tyskland (732), Belgia (705).
+
+Figur 8. Tilfeller i verden. Kilde: ECDC.
+
+12
+
+
