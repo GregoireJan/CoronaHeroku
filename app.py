@@ -31,12 +31,7 @@ files = [
 ]
 # Dataframe columns name
 df = pd.DataFrame(
-    columns=[
-        "Totalt_Tilfeller",
-        "Nye_tilfeller",
-        "Dødsfall",
-        "Totalt_testet",
-    ]
+    columns=["Totalt_Tilfeller", "Nye_tilfeller", "Dødsfall", "Totalt_testet",]
 )
 df_fylke = pd.DataFrame(
     columns=list(
@@ -134,12 +129,7 @@ for ff in sorted(files):
     df = df.append(
         pd.DataFrame(
             data,
-            columns=[
-                "Totalt_Tilfeller",
-                "Nye_tilfeller",
-                "Dødsfall",
-                "Totalt_testet",
-            ],
+            columns=["Totalt_Tilfeller", "Nye_tilfeller", "Dødsfall", "Totalt_testet",],
         )
     )
 # Get timestamp index for df
@@ -147,7 +137,7 @@ datetime_index = pd.DatetimeIndex([re.sub(r".txt", "", f) for f in sorted(files)
 df = df.set_index(datetime_index)
 
 # Retreive patients from Helsedirektorat csv
-df_pasienter=pd.read_csv("./Data/data.csv")
+df_pasienter = pd.read_csv("./Data/data.csv")
 df["Pasienter"] = df_pasienter["Verdi"][1:].values
 
 ###################################################################################
@@ -425,6 +415,13 @@ app.layout = html.Div(
                 ),
                 dbc.Col(
                     [
+                        dbc.Alert(
+                            "Comparing Growth Rate for Total Cases is highly depend on how each country test its inhabitants",
+                            color="danger",
+                            is_open=True,
+                            duration=10000,
+                            style={"textAlign": "center","font-size": "10px",},
+                        ),
                         html.Div(
                             dcc.Dropdown(
                                 id="country",
