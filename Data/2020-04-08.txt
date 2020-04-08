@@ -1,0 +1,1124 @@
+COVID-19
+
+Dagsrapport
+onsdag 8. april 2020
+
+Koronavirus Situasjonsrapport
+
+Dette er en daglig rapport fra Folkehelseinstituttet om koronavirussituasjonen (covid-19) i
+Norge inkludert en oppdatering fra Norden og resten av verden. Dagsrapporten gir et
+situasjonsbilde basert på data fra Meldingssystem for smittsomme sykdommer (MSIS),
+mikrobiologiske laboratorier, Norsk intensiv register og Sykdomspulsen.
+Rapporten er generert 08.04.2020. Tallene er midlertidige og kan bli endret.
+
+Norge
+•
+
+Det er meldt totalt 6 010 personer med påvist covid-19 til Meldingssystem for
+smittsomme sykdommer (MSIS), hvorav 147 ble meldt i går. Oppdatert kl 24.00 den
+07.04.2020.
+
+•
+
+For antallet innlagt på sykehus, se Helsedirektoratets nettsider: Antall innlagte
+pasienter på sykehus med påvist covid-19.
+
+•
+
+Det er totalt 173 personer med bekreftet SARS-CoV-2 som har vært innlagt i
+intensivenhet*, av disse er 89 inneliggende. Gjennomsnittsalderen for de 173
+bekreftede pasientene er 62 år, og 76 % er menn. Aldersfordelingen er: 0-30 år (3), 3039 år (7), 40-49 år (22), 50-59 år (39), 60-69 år (53), 70-79 år (39), 80 år eller eldre (10).
+Norsk intensivregister per 08.04.2020, kl. 08:00.
+*Tall fra Norsk intensivregister over intensivinnleggelser og tall fra Helsedirektoratet over sykehusinnleggelser samles
+inn på ulike måter, og er derfor ikke direkte sammenlignbare. Grunnet overflyttinger mellom intensivavdelinger ble
+noen personer rapportert dobbelt i uke 14. Dette har blitt rettet opp, men det rapporterte tallet på totalt antall
+personer som har vært inneliggende i intensivenhet bør ikke sammenlignes med dagsrapporter fra uke 14. Tallet på
+inneliggende personer har vært korrekt.
+
+•
+
+Det er totalt 80 dødsfall varslet til Folkehelseinstituttet (per 08.04.2020 kl.08.00).
+Gjennomsnittsalderen for de døde er 84 år (fra 51 til 102 år), og 52 % er menn.
+
+•
+
+Totalt 118 077 personer er rapportert testet for covid-19, per 07.04.2020 kl. 15.00. I
+gjennomsnitt har 5 % testet positivt gjennom utbruddet så langt.
+
+1
+
+COVID-19
+
+Dagsrapport
+onsdag 8. april 2020
+Epidemiologiske opplysninger som presenteres i Folkehelseinstituttets dagsrapporter,
+baseres på data meldt til MSIS. Informasjon i MSIS baserer seg på opplysninger fra
+laboratorier og leger.
+Antall meldte tilfeller til MSIS fremstilles etter når covid-19-testen ble tatt og ikke etter dato
+for melding til MSIS. Det er ca. 1-2 dager forsinkelse i tiden fra prøvetaking til registrering i
+MSIS.
+Blant de 147 tilfellene som ble meldt til MSIS 07.04.2020, hadde bare 47 av tilfellene
+prøvetakingsdato 07.04.2020. Figuren under viser antall tilfeller etter prøvetakingsdato
+siden epidemiens start. Antall tilfeller per dag vil justeres, også tilbake i tid, ettersom nye
+tilfeller blir meldt til MSIS.
+
+Figur 1. Personer med påvist covid-19 meldt til MSIS, etter prøvetakingsdato.
+*Det er i gjennomsnitt 1-2 dager forsinkelse i tiden fra prøvetak til registrering i MSIS (markert med rød stjerne).
+
+2
+
+COVID-19
+
+Dagsrapport
+onsdag 8. april 2020
+
+Alder og kjønn
+Gjennomsnittsalder for tilfellene er 48 år, 50 % er menn.
+Tabell 1. Personer med påvist covid-19 meldt til MSIS, etter aldersgrupper og kjønn.
+Alder
+
+Kvinner
+
+Menn
+
+Antall positive
+
+0-9
+
+33
+
+29
+
+62
+
+10-19
+
+133
+
+120
+
+253
+
+20-29
+
+496
+
+340
+
+836
+
+30-39
+
+474
+
+490
+
+964
+
+40-49
+
+552
+
+582
+
+1 134
+
+50-59
+
+545
+
+655
+
+1 200
+
+60-69
+
+332
+
+387
+
+719
+
+70-79
+
+221
+
+256
+
+477
+
+80-89
+
+155
+
+126
+
+281
+
+>= 90
+
+52
+
+32
+
+84
+
+Totalt
+
+2 993
+
+3 017
+
+6 010
+
+Figur 2. Personer med påvist covid-19 meldt til MSIS, etter aldersgrupper og kjønn.
+
+3
+
+COVID-19
+
+Dagsrapport
+onsdag 8. april 2020
+
+Fylker
+Tabell 2. Personer med påvist covid-19 meldt til MSIS siste to døgn, totalt og per 100 000
+innbyggere fordelt på fylke.
+Tilfeller
+prøvedato
+06.04.2020
+
+Tilfeller
+prøvedato
+07.04.2020
+
+Totalt
+antall
+meldte
+tilfeller
+
+Totalt
+antall
+tilfeller per
+100 000
+
+Agder
+
+7
+
+1
+
+243
+
+79,1
+
+Innlandet
+
+7
+
+1
+
+381
+
+102,6
+
+Møre og
+Romsdal
+
+1
+
+0
+
+116
+
+43,7
+
+Nordland
+
+4
+
+1
+
+84
+
+34,8
+
+Oslo
+
+44
+
+31
+
+1 730
+
+249,5
+
+Rogaland
+
+1
+
+0
+
+379
+
+79,0
+
+Troms og
+Finnmark
+
+0
+
+1
+
+185
+
+76,0
+
+Trøndelag
+
+3
+
+0
+
+377
+
+80,4
+
+Vestfold og
+Telemark
+
+3
+
+1
+
+234
+
+55,8
+
+Vestland
+
+20
+
+2
+
+603
+
+94,7
+
+Viken
+
+31
+
+9
+
+1 677
+
+135,1
+
+Ukjent
+
+0
+
+0
+
+1
+
+Totalt
+
+121
+
+47
+
+6 010
+
+Smittested
+
+4
+
+112,0
+
+COVID-19
+
+Dagsrapport
+onsdag 8. april 2020
+
+Figur 3. Personer i Norge med covid-19 (venstre y-akse) og per 100 000 (høyre y-akse).
+*Det er i gjennomsnitt 1-2 dager forsinkelse i tiden fra prøvetak til registrering i MSIS (markert med rød stjerne).
+
+5
+
+COVID-19
+
+Dagsrapport
+onsdag 8. april 2020
+
+Smittested
+3 327 personer (55 %) har blitt smittet i Norge, 1 581 personer (26 %) har blitt smittet
+utenlands, og for 1 102 personer (18 %) er smittested ukjent. Se tabellen og figuren
+nedenfor.
+Av de 3 327 personene som er smittet i Norge, har 1 365 personer (41 %) vært nærkontakter
+av et kjent smittet tilfelle, 1 328 personer (40 %) har ikke kjent smittevei, og 634 personer
+(19 %) har ukjent smittevei.
+
+Tabell 3. Personer med påvist covid-19 meldt til MSIS, etter smittested.
+Smittested
+
+Antall meldte
+
+Andel av antall meldte
+(%)
+
+Norge
+
+3 327
+
+55
+
+Østerrike
+
+691
+
+11
+
+Spania
+
+331
+
+6
+
+Italia
+
+170
+
+3
+
+Storbritannia
+
+102
+
+2
+
+Sveits
+
+48
+
+1
+
+USA
+
+43
+
+1
+
+Frankrike
+
+36
+
+1
+
+Tyskland
+
+22
+
+0
+
+Sverige
+
+13
+
+0
+
+Portugal
+
+11
+
+0
+
+Danmark
+
+10
+
+0
+
+Iran
+
+7
+
+0
+
+Andre land med få tilfeller
+
+97
+
+2
+
+Ukjent
+
+1 102
+
+18
+
+Totalt
+
+6 010
+
+100
+
+6
+
+COVID-19
+
+Dagsrapport
+onsdag 8. april 2020
+
+Figur 4. Personer med påvist covid-19 meldt til MSIS, etter smittested.
+*Det er i gjennomsnitt 1-2 dager forsinkelse i tiden fra prøvetaking til registrering i MSIS (markert med rød stjerne).
+
+Laboratorieovervåking
+Totalt 118 077 personer er rapportert testet for covid-19, pr. 07.04.2020 kl. 15.00. I
+gjennomsnitt har rundt 5 % testet positivt gjennom utbruddet så langt.
+Andel positive har variert gjennom perioden (se figur nedenfor, kun tall fra laboratorier som
+rapporterer prøvetakingsdato er tatt med). Andel positive funn blant de testede kan påvirkes
+av endringer i testkriterier. Endringer i testkriterier kan også ha ført til at litt færre prøver
+testes per dag. Data for de siste dagene er ikke fullstendige og vil oppdateres.
+
+7
+
+COVID-19
+
+Dagsrapport
+onsdag 8. april 2020
+
+Figur 5. Antall prøver testet for covid-19 og andel positive prøver. Figuren inneholder kun tall
+fra laboratorier som har rapporter der prøvetakingsdato er tatt med. Siste dagers
+rapporteringer er ufullstendige og vil oppdateres. Noen prøver analysert med to forskjellige
+analysemetoder har blitt korrigert og figuren avviker derfor noe fra tidligere figurer.
+Tabell 4. Antall personer testet for covid-19 rapportert inn til Folkehelseinstituttet, fordelt på
+helseregioner pr. 07.04.2020 Kl. 15.00.
+*Tabellen inneholder ikke tall fra private laboratorier som analyserer tester fra hele landet.
+
+Antall
+
+Positive
+
+Positive (%)
+
+Region Sør-Øst
+
+59 468
+
+3919
+
+6,59 %
+
+Region Vest
+
+21 540
+
+887
+
+4,12 %
+
+Region Midt
+
+15 071
+
+478
+
+3,17 %
+
+Region Nord
+
+11 685
+
+251
+
+2,15 %
+
+8
+
+COVID-19
+
+Dagsrapport
+onsdag 8. april 2020
+
+Konsultasjoner ved legekontor og legevakt - Sykdomspulsen
+Fram til 07.04.2020 har Folkehelseinstituttet mottatt informasjon om totalt 92 762
+konsultasjoner hos lege og legevakt for covid-19 (mistenkt eller bekreftet, ICPC-2
+diagnosekode R991 opprettet 06.03.2020). De som kontakter legen og får denne koden, har
+ikke nødvendigvis koronavirus, da de kliniske tegnene kan likne vanlig forkjølelse og
+influensa. I tillegg har pasientene som regel ikke et laboratorieverifisert prøvesvar ved
+konsultasjon. Dataene må tolkes med forsiktighet da endrede vaner i befolkningen som for
+eksempel legesøkning påvirker tallene.
+Det er en forsinkelse i systemet, derfor kan grafene endre seg når vi får komplette data.
+Sykdomspulsen (NorSySS)er et syndrombasert overvåkningssystem.
+
+Figur 6. Luftveiskonsultasjoner som andel av konsultasjoner hos lege og legevakt. Kilde:
+Sykdomspulsen, Folkehelseinstituttet.
+
+9
+
+COVID-19
+
+Dagsrapport
+onsdag 8. april 2020
+Tabell 5. Tall fra Sykdomspulsen etter fylke.
+Totalt antall covid-19
+(mistenkt eller bekreftet)
+
+Antall covid-19
+(mistenkt eller bekreftet)
+per 100 000 innbyggere
+
+Agder
+
+5 267
+
+1 714,3
+
+Innlandet
+
+5 149
+
+1 386,4
+
+Møre og Romsdal
+
+4 369
+
+1 647,2
+
+Nordland
+
+2 006
+
+831,6
+
+Oslo
+
+18 364
+
+2 648,0
+
+Rogaland
+
+9 016
+
+1 878,8
+
+Troms og Finnmark
+
+2 805
+
+1 152,8
+
+Trøndelag
+
+5 090
+
+1 086,0
+
+Vestfold og Telemark
+
+8 724
+
+2 080,1
+
+Vestland
+
+9 844
+
+1 546,5
+
+Viken
+
+22 128
+
+1 782,8
+
+Totalt
+
+92 762
+
+1 728,2
+
+Fylke
+
+Alle data vist om den internasjonale situasjonen er hentet fra ECDC (8 April 2020, 11.11),
+data innhentet fra ECDC mellom 06.00 og 10.00 8 April.
+
+Situasjonen i Norden
+Så langt har 22716 tilfeller og 903 dødsfall blitt rapportert fra Norden, 1142 av tilfellene og
+147 av dødsfallene er rapportert siste dag. Tabellen viser tallene fra Norden.
+Tabell 6. Antall påviste COVID-19 tilfeller og dødsfall i nordiske land til 8 april 2020
+Tilfeller
+Country
+
+Dødsfall
+
+Totalt
+
+8 April
+
+Tilfeller per
+100000
+
+Totalt
+
+8 April
+
+per million
+
+Sverige
+
+7693
+
+487
+
+76
+
+591
+
+114
+
+58,0
+
+Norge
+
+5863
+
+108
+
+110
+
+69
+
+10
+
+13,0
+
+Danmark
+
+5071
+
+390
+
+87
+
+203
+
+16
+
+35,0
+
+Finland
+
+2308
+
+132
+
+42
+
+34
+
+7
+
+6,2
+
+Island
+
+1586
+
+24
+
+449
+
+6
+
+0
+
+17,0
+
+*per million = totalt dødsfall/populasjon (184 tilfeller fra Færøyene, 11 tilfeller fra Grønland)
+
+10
+
+COVID-19
+
+Dagsrapport
+onsdag 8. april 2020
+
+Figur 7. Antall påviste covid-19 tilfeller i Norden per dag. OBS det er ulik skala på y-aksene.
+
+11
+
+COVID-19
+
+Dagsrapport
+onsdag 8. april 2020
+
+Verden for øvrig
+Så langt har 1 391 890 tilfeller og 81478 dødsfall blitt rapportert globalt (tall fra ECDC per 08.04. kl. 11.11);
+74893 av tilfellene og 7413 av dødsfallene er rapportert siste dag. Figuren og tabellen nedenfor viser
+rapporterte tilfeller per dag for de ulike verdensdelene.
+Tabell 7. Antall påviste covid-19 tilfeller i verder totalt og i dag, fordelt på verdensdel, samt dødsfall.
+
+Tilfeller
+
+Dødsfall
+
+Verdensdel
+Totalt
+
+8 April
+
+Totalt
+
+8 April
+
+Europa
+
+675869
+
+28934
+
+56839
+
+4864
+
+Amerika
+
+456515
+
+35572
+
+14862
+
+2184
+
+Asia
+
+241416
+
+9543
+
+9202
+
+314
+
+10258
+
+698
+
+516
+
+46
+
+7136
+
+155
+
+52
+
+4
+
+Totalt
+
+8 April
+
+Totalt
+
+8 April
+
+Europa
+
+675869
+
+28934
+
+56839
+
+4864
+
+Amerika
+
+456515
+
+35572
+
+14862
+
+2184
+
+Asia
+
+241416
+
+9543
+
+9202
+
+314
+
+10258
+
+698
+
+516
+
+46
+
+7136
+
+155
+
+52
+
+4
+
+Afrika
+Oseania
+
+Verdensdel
+
+Afrika
+Oseania
+
+Figur 8. Antall påviste covid-19 tilfeller i verden per dag, fordelt på verdensdel.
+Landene med høyeste antall rapporterte tilfeller per verdensdel er vist i tabellen på neste side.
+
+12
+
+COVID-19
+
+Dagsrapport
+onsdag 8. april 2020
+Tabell 8. Antall påviste covid-19 tilfeller og dødsfall i verden (opptil tre land med høyest forekomst).
+Tilfeller
+Verdensdel
+
+Dødsfall
+
+Land
+Total
+
+8 April
+
+Tilfeller
+per
+
+Total
+
+8 April
+
+per million
+
+100000
+
+Europa
+
+Amerika
+
+Asia
+
+Afrika
+
+Spania
+
+140510
+
+5478
+
+301
+
+13798
+
+743
+
+295,3
+
+Italia
+
+135586
+
+3039
+
+224
+
+17129
+
+604
+
+283,4
+
+Tyskland
+
+103228
+
+4003
+
+124
+
+1861
+
+254
+
+22,4
+
+USA
+
+398809
+
+30613
+
+122
+
+12895
+
+1906
+
+39,4
+
+Canada
+
+17883
+
+1230
+
+48
+
+380
+
+57
+
+10,3
+
+Brazil
+
+13717
+
+1661
+
+7
+
+667
+
+114
+
+3,2
+
+Kina
+
+82784
+
+86
+
+6
+
+3337
+
+2
+
+2,4
+
+Iran
+
+62589
+
+2089
+
+77
+
+3872
+
+133
+
+47,3
+
+Tyrkia
+
+34109
+
+3892
+
+41
+
+725
+
+76
+
+8,8
+
+Sør Afrika
+
+1749
+
+63
+
+3
+
+13
+
+1
+
+0,2
+
+Algerie
+
+1468
+
+45
+
+3
+
+194
+
+21
+
+4,6
+
+Marokko
+
+1322
+
+249
+
+1
+
+85
+
+7
+
+0,9
+
+Australia
+
+5956
+
+112
+
+24
+
+45
+
+3
+
+1,8
+
+969
+
+26
+
+20
+
+1
+
+0
+
+0,2
+
+Oseania
+New Zealand
+
+13
+
+
