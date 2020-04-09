@@ -156,7 +156,7 @@ df_tsdeath = df_tsdeath.set_index(datetime_index)
 
 df_daysdeath = df_tsdeath.copy()
 # Threshold deaths
-n = 1
+n = 0
 for col in df_daysdeath.columns:
     if df_daysdeath[col].max() > n:
         firsdeath = df_daysdeath.index[df_daysdeath[col] > n][0]
@@ -167,7 +167,7 @@ for col in df_daysdeath.columns:
 df_daysdeath = df_daysdeath.reset_index().drop(columns="index")
 df_daysdeath.index.names = ["Days"]
 # Ratio=0 for day 0
-df_daysdeath.iloc[0, :] = 0
+df_daysdeath.iloc[0, :] = 1
 
 # Same as above for confirmed cases
 df_tsconf = pd.read_csv("Data/time_series_covid19_confirmed_global.csv")
@@ -187,8 +187,7 @@ for col in df_daysconf.columns:
         df_daysconf[col] = df_daysconf[col] / (df_daysconf[col][0])
 df_daysconf = df_daysconf.reset_index().drop(columns="index")
 df_daysconf.index.names = ["Days"]
-df_daysconf.iloc[0, :] = 0
-
+df_daysconf.iloc[0, :] = 1
 
 def convert_options(optionlabels, optionvals):
     return [
