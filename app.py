@@ -421,10 +421,11 @@ app.layout = html.Div(
                             duration=10000,
                             style={"textAlign": "center","font-size": "10px",},
                         ),
-                        html.Div(
+                        dbc.Row([
+                            dbc.Col(
                             dcc.Dropdown(
                                 id="country",
-                                value="Sweden",
+                                value="Norway",
                                 options=convert_options(
                                     df_daysconf.columns, df_daysconf.columns
                                 ),
@@ -434,8 +435,37 @@ app.layout = html.Div(
                                     "font-weight": "bold",
                                     "textAlign": "center",
                                 },
-                            ),
+                            )),
+                            dbc.Col(
+                            dcc.Dropdown(
+                                id="country2",
+                                value="Sweden",
+                                options=convert_options(
+                                    df_daysconf.columns, df_daysconf.columns
+                                ),
+                                placeholder="Select a country to compare to",
+                                style={
+                                    "font-size": "20px",
+                                    "font-weight": "bold",
+                                    "textAlign": "center",
+                                },
+                            )),]
                         ),
+                        # html.Div(
+                        #     dcc.Dropdown(
+                        #         id="country2",
+                        #         value="Sweden",
+                        #         options=convert_options(
+                        #             df_daysconf.columns, df_daysconf.columns
+                        #         ),
+                        #         placeholder="Select a country to compare to",
+                        #         style={
+                        #             "font-size": "20px",
+                        #             "font-weight": "bold",
+                        #             "textAlign": "center",
+                        #         },
+                        #     ),
+                        # ),
                         html.Div([dcc.Graph(id="scatter-graph", figure={"data": []},)]),
                         html.Div(
                             [dcc.Graph(id="scatter-graph2", figure={"data": []},)]
@@ -589,16 +619,16 @@ def barplot2(date):
 
 
 @app.callback(
-    dash.dependencies.Output("scatter-graph", "figure"), [Input("country", "value")],
+    dash.dependencies.Output("scatter-graph", "figure"), [Input("country", "value"),Input("country2", "value")],
 )
-def scatter(country):
+def scatter(country,country2):
     return go.Figure(
         data=[
             go.Scatter(
                 x=list(df_daysconf.index.values),
-                y=list(df_daysconf["Norway"].values),
+                y=list(df_daysconf[country2].values),
                 mode="markers",
-                name="Norway",
+                name=country2,
             ),
             go.Scatter(
                 x=list(df_daysconf.index.values),
@@ -632,16 +662,16 @@ def scatter(country):
 
 
 @app.callback(
-    dash.dependencies.Output("scatter-graph2", "figure"), [Input("country", "value")],
+    dash.dependencies.Output("scatter-graph2", "figure"), [Input("country", "value"),Input("country2", "value")],
 )
-def scatter2(country):
+def scatter2(country,country2):
     return go.Figure(
         data=[
             go.Scatter(
                 x=list(df_daysdeath.index.values),
-                y=list(df_daysdeath["Norway"].values),
+                y=list(df_daysdeath[country2].values),
                 mode="markers",
-                name="Norway",
+                name=country2,
             ),
             go.Scatter(
                 x=list(df_daysdeath.index.values),
