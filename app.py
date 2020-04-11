@@ -643,7 +643,7 @@ def scatter(country,country2):
                 "font": {"size": 30},
                 "x": 0.5,
             },
-            xaxis={"title": "Days", "range": [-1, 45], "tickmode": "linear",},
+            xaxis={"title": "Days", "range": [-1, 60], "tickmode": "linear",},
             yaxis={"title": "Growth Rate X (compared to Day 0)"},
             plot_bgcolor="rgb(255,255,255)",
             annotations=[
@@ -682,7 +682,7 @@ def scatter2(country,country2):
         ],
         layout=go.Layout(
             title={"text": "Growth Rate for Deaths", "font": {"size": 30}, "x": 0.5,},
-            xaxis={"title": "Days", "range": [-1, 45], "tickmode": "linear",},
+            xaxis={"title": "Days", "range": [-1, 60], "tickmode": "linear",},
             yaxis={"title": "Growth Rate X (compared to Day 0)"},
             plot_bgcolor="rgb(255,255,255)",
             annotations=[
