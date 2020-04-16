@@ -1,0 +1,789 @@
+COVID-19
+
+Dagsrapport
+torsdag 16. april 2020
+
+Koronavirus Situasjonsrapport
+
+Dette er en daglig rapport fra Folkehelseinstituttet om koronavirussituasjonen (covid-19) i
+Norge inkludert en oppdatering fra Norden og resten av verden. Dagsrapporten gir et
+situasjonsbilde basert på data fra Meldingssystem for smittsomme sykdommer (MSIS),
+mikrobiologiske laboratorier, Norsk intensivregister og Sykdomspulsen.
+Rapporten er generert 16.04.2020. Tallene er midlertidige og kan bli endret.
+
+Norge
+•
+
+Det er meldt totalt 6 791 personer med påvist covid-19 til Meldingssystem for
+smittsomme sykdommer (MSIS), hvorav 115 ble meldt i går. Oppdatert kl 24.00 den
+15.04.2020.
+
+•
+
+For antallet innlagt på sykehus, se Helsedirektoratets nettsider: Antall innlagte
+pasienter på sykehus med påvist covid-19
+
+•
+
+Det er totalt 187 personer med bekreftet SARS-CoV-2 som har vært innlagt i
+intensivenhet*, av disse er 63 inneliggende. Norsk intensivregister per 16.04.2020, kl.
+08:00.
+*Tall fra Norsk intensivregister over intensivinnleggelser og tall fra Helsedirektoratet over sykehusinnleggelser samles
+inn på ulike måter, og er derfor ikke direkte sammenlignbare.
+
+•
+
+Det er totalt 136 dødsfall varslet til Folkehelseinstituttet (per 16.04.2020 kl.08.00).
+
+•
+
+Totalt 133 707 personer er rapportert testet for covid-19, per 15.04.2020 kl. 15.00.
+
+1
+
+COVID-19
+
+Dagsrapport
+torsdag 16. april 2020
+Epidemiologiske opplysninger som presenteres i Folkehelseinstituttets dagsrapporter,
+baseres på data meldt til MSIS. Informasjon i MSIS baserer seg på opplysninger fra
+laboratorier og leger.
+Antall meldte tilfeller til MSIS fremstilles etter når covid-19-testen ble tatt og ikke etter dato
+for melding til MSIS. Det er ca. 1-2 dager forsinkelse i tiden fra prøvetaking til registrering i
+MSIS.
+Blant de 115 tilfellene som ble meldt til MSIS 15.04.2020, hadde bare 25 av tilfellene
+prøvetakingsdato 15.04.2020. Figuren under viser antall tilfeller etter prøvetakingsdato
+siden epidemiens start. Antall tilfeller per dag vil justeres, også tilbake i tid, ettersom nye
+tilfeller blir meldt til MSIS.
+
+Figur 1. Personer med påvist covid-19 meldt til MSIS, etter prøvetakingsdato.
+Det er i gjennomsnitt 1-2 dager forsinkelse i tiden fra prøvetaking til registrering i MSIS (markert med rød stjerne).
+
+2
+
+COVID-19
+
+Dagsrapport
+torsdag 16. april 2020
+
+Alder og kjønn
+Gjennomsnittsalder for tilfellene er 47 år, 49 % er menn.
+Tabell 1. Personer med påvist covid-19 meldt til MSIS, etter aldersgrupper og kjønn.
+Alder
+
+Kvinner
+
+Menn
+
+Antall positive
+
+0-9
+
+41
+
+36
+
+77
+
+10-19
+
+157
+
+138
+
+295
+
+20-29
+
+588
+
+414
+
+1 002
+
+30-39
+
+551
+
+549
+
+1 100
+
+40-49
+
+616
+
+628
+
+1 244
+
+50-59
+
+623
+
+708
+
+1 331
+
+60-69
+
+362
+
+425
+
+787
+
+70-79
+
+245
+
+285
+
+530
+
+80-89
+>= 90
+
+183
+65
+
+140
+37
+
+323
+102
+
+Totalt
+
+3 431
+
+3 360
+
+6 791
+
+Figur 2. Personer med påvist covid-19 meldt til MSIS, etter aldersgrupper og kjønn.
+
+3
+
+COVID-19
+
+Dagsrapport
+torsdag 16. april 2020
+
+Fylker
+Tabell 2. Personer med påvist covid-19 meldt til MSIS siste to døgn, totalt og per 100 000
+innbyggere fordelt på fylke.
+Smittested
+
+Tilfeller
+prøvedato
+14.04.2020
+
+Tilfeller
+prøvedato
+15.04.2020
+
+Totalt antall
+meldte
+tilfeller
+
+Totalt antall
+tilfeller per
+100 000
+
+Agder
+
+9
+
+0
+
+275
+
+89,5
+
+Innlandet
+
+4
+
+1
+
+403
+
+108,5
+
+Møre og
+Romsdal
+
+0
+
+1
+
+118
+
+44,5
+
+Nordland
+
+1
+
+1
+
+104
+
+43,1
+
+Oslo
+
+36
+
+14
+
+2 031
+
+292,9
+
+Rogaland
+
+0
+
+0
+
+383
+
+79,8
+
+Troms og
+Finnmark
+
+1
+
+1
+
+203
+
+83,4
+
+Trøndelag
+Vestfold og
+Telemark
+
+1
+
+0
+
+406
+
+86,6
+
+1
+
+0
+
+251
+
+59,8
+
+Vestland
+
+22
+
+0
+
+743
+
+116,7
+
+Viken
+
+24
+
+6
+
+1 864
+
+150,2
+
+Ukjent
+
+0
+
+1
+
+10
+
+Totalt
+
+99
+
+25
+
+6 791
+
+4
+
+126,5
+
+COVID-19
+
+Dagsrapport
+torsdag 16. april 2020
+
+Figur 3. Personer i Norge med covid-19 (venstre y-akse) og per 100 000 (høyre y-akse).
+*Det er i gjennomsnitt 1-2 dager forsinkelse i tiden fra prøvetaking til registrering i MSIS (markert med rød stjerne).
+
+5
+
+COVID-19
+
+Dagsrapport
+torsdag 16. april 2020
+
+Smittested
+3 410 personer (50 %) har blitt smittet i Norge, 1 595 personer (23 %) har blitt smittet
+utenlands, og for 1 786 personer (26 %) er smittested ukjent. Se tabellen og figuren
+nedenfor.
+Av de 3 410 personene som er smittet i Norge, har 1 366 personer (40 %) vært nærkontakter
+av et kjent smittet tilfelle, 1 328 personer (39 %) kan ikke knyttes til et kjent smittet tilfelle,
+og 716 personer (21 %) mangler opplysninger om smittevei.
+
+Tabell 3. Personer med påvist covid-19 meldt til MSIS, etter smittested.
+Smittested
+
+Antall meldte
+
+Andel av antall meldte (%)
+
+Norge
+
+3 410
+
+50,2
+
+Østerrike
+
+697
+
+10,3
+
+Spania
+Italia
+
+334
+172
+
+4,9
+2,5
+
+Storbritannia
+
+101
+
+1,5
+
+Sveits
+
+48
+
+0,7
+
+USA
+Frankrike
+
+43
+35
+
+0,6
+0,5
+
+Tyskland
+
+22
+
+0,3
+
+Sverige
+Portugal
+
+13
+11
+
+0,2
+0,2
+
+Danmark
+
+10
+
+0,1
+
+Iran
+
+7
+
+0,1
+
+Andre land med få tilfeller
+Ukjent
+
+102
+1 786
+
+1,5
+26,3
+
+Totalt
+
+6 791
+
+100
+
+6
+
+COVID-19
+
+Dagsrapport
+torsdag 16. april 2020
+
+Figur 4. Personer med påvist covid-19 meldt til MSIS, etter smittested.
+*Det er i gjennomsnitt 1-2 dager forsinkelse i tiden fra prøvetaking til registrering i MSIS (markert med rød stjerne).
+
+7
+
+COVID-19
+
+Dagsrapport
+torsdag 16. april 2020
+
+Intensivenhet
+Det er totalt 187 personer med bekreftet SARS-CoV-2 som har vært innlagt i intensivenhet*,
+av disse er 63 inneliggende. Norsk intensivregister per 16.04.2020, kl. 08:00.
+Gjennomsnittsalderen for de 187 bekreftede pasientene er 62 år, og 75 % er menn. Det er
+registrert 23 dødsfall.
+*Tall fra Norsk intensivregister over intensivinnleggelser og tall fra Helsedirektoratet over sykehusinnleggelser samles inn på
+ulike måter, og er derfor ikke direkte sammenlignbare.
+
+Tabell 4. Personer innlagt i intensivenhet med bekreftet covid-19 rapportert til norsk
+intensivregister, etter aldersgrupper og kjønn,16.04.2020, kl. 08:00 .
+Alder
+
+Antall
+
+Andel (%)
+
+0-29
+
+3
+
+2
+
+30-39
+40-49
+
+7
+24
+
+4
+13
+
+50-59
+
+44
+
+24
+
+60-69
+
+55
+
+29
+
+70-79
+>=80
+
+43
+11
+
+23
+6
+
+Totalt
+
+187
+
+100
+
+8
+
+COVID-19
+
+Dagsrapport
+torsdag 16. april 2020
+
+Covid-19 assosierte dødsfall
+Det er totalt 136 dødsfall varslet til Folkehelseinstituttet (per 16.04.2020 kl.08.00). Det er
+ikke alltid mulig å skille om pasienten har dødd av eller med covid-19.
+Gjennomsnittsalderen for de døde er 84 år, medianalderen er 85 og 54 % av de døde er
+menn.
+Tabell 5. Covid-19 assosierte dødsfall varslet til Folkehelseinstituttet, etter aldersgrupper og
+kjønn, per 16.04.2020 kl.08.00.
+Alder
+
+Menn
+
+Kvinner
+
+Antall
+
+Andel (%)
+
+50-59
+
+5
+
+0
+
+5
+
+4
+
+60-69
+
+5
+
+3
+
+8
+
+6
+
+70-79
+
+17
+
+9
+
+26
+
+19
+
+80-89
+>=90
+
+30
+16
+
+26
+25
+
+56
+41
+
+41
+30
+
+Totalt
+
+73
+
+63
+
+136
+
+100
+
+Tabell 6. Covid-19 assosierte dødsfall varslet til Folkehelseinstituttet, etter dødssted, per
+16.04.2020 kl.08.00.
+Dødssted
+
+Antall
+
+Andel (%)
+
+Annen helseinstitusjon*
+Hjemme
+
+87
+5
+
+64
+4
+
+Sykehus
+
+44
+
+32
+
+136
+
+100
+
+Totalt
+
+*Inkluderer sykehjem eller annen pleie- og omsorgsinstitusjon som bo- og
+behandlingssenter.
+
+9
+
+COVID-19
+
+Dagsrapport
+torsdag 16. april 2020
+
+Laboratorieovervåking
+Totalt 133 707 personer er rapportert testet for covid-19, pr. 15.04.2020 kl. 15.00. I
+gjennomsnitt har rundt 5 % testet positivt gjennom utbruddet så langt.
+Andel positive har variert gjennom perioden (se figur nedenfor, kun tall fra laboratorier som
+rapporterer prøvetakingsdato er tatt med). Andel positive funn blant de testede kan påvirkes
+av endringer i testkriterier. Endringer i testkriterier kan også ha ført til at litt færre prøver
+testes per dag. Data for de siste dagene er ikke fullstendige og vil oppdateres i kommende
+dagsrapporter og neste ukerapport.
+
+Figur 5. Antall prøver testet for covid-19 og andel positive prøver. Figuren inneholder kun tall
+fra laboratorier som har rapporter der prøvetakingsdato er tatt med. Siste dagers
+rapporteringer er ufullstendige og vil oppdateres.
+
+10
+
+COVID-19
+
+Dagsrapport
+torsdag 16. april 2020
+Tabell 7. Antall personer testet for covid-19 rapportert inn til Folkehelseinstituttet, fordelt på
+helseregioner pr. 15.04.2020 kl. 15.00.
+*Tabellen inneholder ikke tall fra private laboratorier som analyserer tester fra hele landet.
+
+Helseregion
+
+% Positive
+
+Region Sør-Øst
+
+6,7
+
+Region Vest
+Region Midt
+
+4,3
+3,0
+
+Region Nord
+
+2,3
+
+Konsultasjoner ved legekontor og legevakt - Sykdomspulsen
+Fram til 15.04.2020 har Folkehelseinstituttet mottatt informasjon om totalt 112 454
+konsultasjoner hos lege og legevakt for covid-19 (mistenkt eller bekreftet, ICPC-2
+diagnosekode R991 opprettet 06.03.2020). De som kontakter legen og får denne koden, har
+ikke nødvendigvis koronavirus, da de kliniske tegnene kan likne vanlig forkjølelse og
+influensa. I tillegg har pasientene som regel ikke et laboratorieverifisert prøvesvar ved
+konsultasjon.
+Dataene må tolkes med forsiktighet da endrede vaner i befolkningen som for eksempel
+legesøkning påvirker tallene.
+NB! Det er forsinkelse i KUHR systemet og spesielt i helger og på helligdager er det svært få
+leger som sender inn data, det vil derfor kunne bli en skjevhet i tallene. Figurene vil kunne
+endre seg når vi får komplette data.
+Sykdomspulsen - temaside
+
+11
+
+COVID-19
+
+Dagsrapport
+torsdag 16. april 2020
+
+Figur 6. Luftveiskonsultasjoner som andel av konsultasjoner hos lege og legevakt. Kilde:
+Sykdomspulsen, Folkehelseinstituttet.
+
+12
+
+COVID-19
+
+Dagsrapport
+torsdag 16. april 2020
+
+Tabell 8. Tall fra Sykdomspulsen etter fylke.
+Fylke
+
+Totalt antall covid-19
+(mistenkt eller bekreftet)
+
+Antall covid-19
+(mistenkt eller bekreftet)
+per 100 000 innbyggere
+
+Agder
+
+5 715
+
+1 860,2
+
+Innlandet
+
+5 629
+
+1 515,7
+
+Møre og Romsdal
+
+5 167
+
+1 948,1
+
+Nordland
+
+2 651
+
+1 098,9
+
+Oslo
+
+20 358
+
+2 935,6
+
+Rogaland
+
+10 484
+
+2 184,7
+
+Troms og Finnmark
+
+4 072
+
+1 673,6
+
+Trøndelag
+
+6 145
+
+1 311,1
+
+Vestfold og Telemark
+
+10 044
+
+2 394,9
+
+Vestland
+
+14 428
+
+2 266,7
+
+Viken
+
+27 761
+
+2 236,7
+
+Totalt
+
+112 454
+
+2 095,1
+
+13
+
+
