@@ -185,6 +185,7 @@ for col in df_daysconf.columns:
         firsconf = df_daysconf.index[df_daysconf[col] > n][0]
         df_daysconf[col] = df_daysconf[col].shift(-(firsconf - dt(2020, 1, 22)).days)
         df_daysconf[col] = df_daysconf[col] / (df_daysconf[col][0])
+
 df_daysconf = df_daysconf.reset_index().drop(columns="index")
 df_daysconf.index.names = ["Days"]
 df_daysconf.iloc[0, :] = 1
