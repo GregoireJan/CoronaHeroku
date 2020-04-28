@@ -138,7 +138,7 @@ df = df.set_index(datetime_index)
 
 # Retreive patients from Helsedirektorat csv
 df_pasienter = pd.read_csv("./Data/data.csv")
-df["Pasienter"] = df_pasienter["Verdi"][1:].values
+df["Pasienter"] = df_pasienter["Innlagte med påvist covid-19"][1:].values
 
 ###################################################################################
 ### Time Series from John Hopkins
