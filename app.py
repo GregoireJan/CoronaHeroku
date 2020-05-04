@@ -145,9 +145,8 @@ df["Pasienter"] = df_pasienter["Innlagte med påvist covid-19"][1:].values
 ###################################################################################
 ### Time Series from John Hopkins
 
-#Load population
-pop = pd.read_csv("./Data/popcountry.csv")[["Country",'Country_Code','Year_2016']]
-pop.columns=["Country",'Country_Code','Pop']
+#Load population (fix country names in datpop notebook)
+pop = pd.read_csv("./Data/population.csv")
 
 # Load
 df_tsdeath = pd.read_csv("Data/time_series_covid19_deaths_global.csv")
@@ -169,7 +168,7 @@ for col in df_daysdeath.columns:
         df_daysdeath[col] = df_daysdeath[col].shift(-(firsdeath - dt(2020, 1, 22)).days)
         # Get ratio per million inhabitant 
         try:
-            df_daysdeath[col] = 1000000*(df_daysdeath[col] / pop[pop['Country_Code']==pycountry.countries.search_fuzzy(col)[0].alpha_3]['Pop'].values)
+            df_daysdeath[col] = 1000000*(df_daysdeath[col] / pop[pop['Country/Region']==col]['Pop'].values)
         except:
             #print(col)
             df_daysdeath[col] = [np.nan]*len(df_daysdeath[col])
@@ -197,7 +196,7 @@ for col in df_daysconf.columns:
         #df_daysconf[col] = df_daysconf[col] / (df_daysconf[col][0])
         # Get ratio per million inhabitant 
         try:
-            df_daysconf[col] = 1000000*(df_daysconf[col] / pop[pop['Country_Code']==pycountry.countries.search_fuzzy(col)[0].alpha_3]['Pop'].values)
+            df_daysconf[col] = 1000000*(df_daysconf[col] / pop[pop['Country/Region']==col]['Pop'].values)
         except:
             df_daysconf[col] = [np.nan]*len(df_daysconf[col])
 
