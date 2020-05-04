@@ -146,7 +146,7 @@ df["Pasienter"] = df_pasienter["Innlagte med påvist covid-19"][1:].values
 ### Time Series from John Hopkins
 
 #Load population
-pop = pd.read_csv("/home/greg/Documents/DataScience/app/CoronaNorge/Data/popcountry.csv")[["Country",'Country_Code','Year_2016']]
+pop = pd.read_csv("./Data/popcountry.csv")[["Country",'Country_Code','Year_2016']]
 pop.columns=["Country",'Country_Code','Pop']
 
 # Load
