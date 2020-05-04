@@ -20,6 +20,8 @@ import re
 import wget
 import os
 import numpy as np
+import pycountry
+
 
 pd.options.mode.chained_assignment = None  # default='warn'
 
@@ -143,10 +145,14 @@ df["Pasienter"] = df_pasienter["Innlagte med påvist covid-19"][1:].values
 ###################################################################################
 ### Time Series from John Hopkins
 
+#Load population
+pop = pd.read_csv("/home/greg/Documents/DataScience/app/CoronaNorge/Data/popcountry.csv")[["Country",'Country_Code','Year_2016']]
+pop.columns=["Country",'Country_Code','Pop']
+
 # Load
 df_tsdeath = pd.read_csv("Data/time_series_covid19_deaths_global.csv")
 # Group by contry and transpose
-df_tsdeath = df_tsdeath.groupby("Country/Region").sum().reset_index().T[:-1]
+df_tsdeath = df_tsdeath.groupby("Country/Region").sum().rename(index={'Burma':'Myanmar','Korea, South':'Republic of Korea','Laos':'Lao','Taiwan*':'Taiwan','Congo (Brazzaville)':'Republic of the Congo','Congo (Kinshasa)':'Congo, The Democratic Republic of the','West Bank and Gaza':'Palestine, State of'}).reset_index().T[:-1]
 # Fix column name
 df_tsdeath.columns = df_tsdeath.iloc[0, :]
 df_tsdeath = df_tsdeath[3:]
@@ -161,8 +167,12 @@ for col in df_daysdeath.columns:
     if df_daysdeath[col].max() > n:
         firsdeath = df_daysdeath.index[df_daysdeath[col] > n][0]
         df_daysdeath[col] = df_daysdeath[col].shift(-(firsdeath - dt(2020, 1, 22)).days)
-        # Get ratio with day 0
-        df_daysdeath[col] = df_daysdeath[col] / (df_daysdeath[col][0])
+        # Get ratio per million inhabitant 
+        try:
+            df_daysdeath[col] = 1000000*(df_daysdeath[col] / pop[pop['Country_Code']==pycountry.countries.search_fuzzy(col)[0].alpha_3]['Pop'].values)
+        except:
+            #print(col)
+            df_daysdeath[col] = [np.nan]*len(df_daysdeath[col])
 # Reset index
 df_daysdeath = df_daysdeath.reset_index().drop(columns="index")
 df_daysdeath.index.names = ["Days"]
@@ -171,7 +181,7 @@ df_daysdeath.iloc[0, :] = 1
 
 # Same as above for confirmed cases
 df_tsconf = pd.read_csv("Data/time_series_covid19_confirmed_global.csv")
-df_tsconf = df_tsconf.groupby("Country/Region").sum().reset_index().T[:-1]
+df_tsconf = df_tsconf.groupby("Country/Region").sum().rename(index={'Burma':'Myanmar','Korea, South':'Republic of Korea','Laos':'Lao','Taiwan*':'Taiwan','Congo (Brazzaville)':'Republic of the Congo','Congo (Kinshasa)':'Congo, The Democratic Republic of the','West Bank and Gaza':'Palestine, State of'}).reset_index().T[:-1]
 df_tsconf.columns = df_tsconf.iloc[0, :]
 df_tsconf = df_tsconf[3:]
 datetime_index = pd.DatetimeIndex(df_tsconf.index)
@@ -184,7 +194,12 @@ for col in df_daysconf.columns:
     if df_daysconf[col].max() > n:
         firsconf = df_daysconf.index[df_daysconf[col] > n][0]
         df_daysconf[col] = df_daysconf[col].shift(-(firsconf - dt(2020, 1, 22)).days)
-        df_daysconf[col] = df_daysconf[col] / (df_daysconf[col][0])
+        #df_daysconf[col] = df_daysconf[col] / (df_daysconf[col][0])
+        # Get ratio per million inhabitant 
+        try:
+            df_daysconf[col] = 1000000*(df_daysconf[col] / pop[pop['Country_Code']==pycountry.countries.search_fuzzy(col)[0].alpha_3]['Pop'].values)
+        except:
+            df_daysconf[col] = [np.nan]*len(df_daysconf[col])
 
 df_daysconf = df_daysconf.reset_index().drop(columns="index")
 df_daysconf.index.names = ["Days"]
@@ -640,12 +655,12 @@ def scatter(country,country2):
         ],
         layout=go.Layout(
             title={
-                "text": "Growth Rate for Total Cases",
+                "text": "Total Cases \n(per million inhabitants)",
                 "font": {"size": 30},
                 "x": 0.5,
             },
             xaxis={"title": "Days", "range": [-1, 90],"tickangle":45},
-            yaxis={"title": "Growth Rate X (compared to Day 0)"},
+            yaxis={"title": "Total Cases per million"},
             plot_bgcolor="rgb(255,255,255)",
             annotations=[
                 go.layout.Annotation(
@@ -682,13 +697,13 @@ def scatter2(country,country2):
             ),
         ],
         layout=go.Layout(
-            title={"text": "Growth Rate for Deaths", "font": {"size": 30}, "x": 0.5,},
+            title={"text": "Deaths \n(per million inhabitants)", "font": {"size": 30}, "x": 0.5,},
             xaxis={"title": "Days", "range": [-1, 90],"tickangle":45},
-            yaxis={"title": "Growth Rate X (compared to Day 0)"},
+            yaxis={"title": "Deaths per million"},
             plot_bgcolor="rgb(255,255,255)",
             annotations=[
                 go.layout.Annotation(
-                    text="Day 0 = first day with one dead person",
+                    text="Day 0 = first death",
                     align="center",
                     showarrow=False,
                     xref="paper",
