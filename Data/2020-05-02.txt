@@ -14,7 +14,7 @@ Rapporten er generert 30.04.2020. Tallene er midlertidige og kan bli endret.
 Norge
 •
 
-Det er meldt totalt 7 759 personer med påvist covid-19 til Meldingssystem for
+Det er meldt totalt 7 777 personer med påvist covid-19 til Meldingssystem for
 smittsomme sykdommer (MSIS), hvorav 43 ble meldt i går. Oppdatert kl. 24.00 den
 29.04.2020.
 

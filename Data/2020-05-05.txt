@@ -1,7 +1,7 @@
 COVID-19
 
 Dagsrapport
-torsdag 30. april 2020
+tirsdag 5. mai 2020
 
 Koronavirus Situasjonsrapport
 
@@ -9,50 +9,50 @@ Dette er en daglig rapport fra Folkehelseinstituttet om koronavirussituasjonen (
 Norge. Dagsrapporten gir et situasjonsbilde basert på data fra Meldingssystem for
 smittsomme sykdommer (MSIS), mikrobiologiske laboratorier, Norsk intensiv- og
 pandemiregister og Sykdomspulsen.
-Rapporten er generert 30.04.2020. Tallene er midlertidige og kan bli endret.
+Rapporten er generert 05.05.2020. Tallene er midlertidige og kan bli endret.
 
 Norge
 •
 
-Det er meldt totalt 7 788 personer med påvist covid-19 til Meldingssystem for
-smittsomme sykdommer (MSIS), hvorav 43 ble meldt i går. Oppdatert kl. 24.00 den
-29.04.2020.
+Det er meldt totalt 7 903 personer med påvist covid-19 til Meldingssystem for
+smittsomme sykdommer (MSIS), hvorav 59 ble meldt i går. Oppdatert kl. 24.00 den
+04.05.2020.
 
 •
 
-Det er totalt 998 personer med påvist covid-19 som har vært innlagt i sykehus i Norge.
-Norsk pandemiregister* per 30.04.2020, kl. 08:00. For antallet inneliggende på sykehus,
+Det er totalt 1015 personer med påvist covid-19 som har vært innlagt i sykehus i Norge.
+Norsk pandemiregister* per 05.05.2020, kl. 08:00. For antallet inneliggende på sykehus,
 se Helsedirektoratets nettsider*: Antall innlagte pasienter på sykehus med påvist covid19.
 
 •
 
-Det er totalt 214 personer med påvist covid-19 som har vært innlagt i intensivenhet*.
-Av disse er 47 inneliggende. Norsk intensivregister per 30.04.2020, kl. 08:00.
+Det er totalt 215 personer med påvist covid-19 som har vært innlagt i intensivenhet*.
+Av disse er 35 inneliggende. Norsk intensivregister per 05.05.2020, kl. 08:00.
 *Tall fra Helsedirektoratet over sykehusinnleggelser og tall fra Norsk intensiv- og pandemiregister samles inn på ulike
 måter, og er derfor ikke direkte sammenlignbare.
 
 •
 
-Det er totalt 204 dødsfall varslet til Folkehelseinstituttet (per 30.04.2020 kl.08.00).
+Det er totalt 209 dødsfall varslet til Folkehelseinstituttet (per 05.05.2020 kl.08.00).
 
 •
 
-Totalt 172 586 personer er rapportert testet for covid-19, per 29.04.2020 kl. 24.00.
+Totalt 189 657 personer er rapportert testet for covid-19, per 04.05.2020 kl. 24.00.
 
 1
 
 COVID-19
 
 Dagsrapport
-torsdag 30. april 2020
+tirsdag 5. mai 2020
 Epidemiologiske opplysninger som presenteres i Folkehelseinstituttets dagsrapporter,
 baseres på data meldt til MSIS. Informasjon i MSIS baserer seg på opplysninger fra
 laboratorier og leger.
 Antall meldte tilfeller til MSIS fremstilles etter når covid-19-testen ble tatt og ikke etter dato
 for melding til MSIS. Det er ca. 1-2 dager forsinkelse i tiden fra prøvetaking til registrering av
 bekreftet tilfelle i MSIS.
-Blant de 43 tilfellene som ble meldt til MSIS 29.04.2020, hadde bare 2 av tilfellene
-prøvetakingsdato 29.04.2020. Figuren under viser antall tilfeller etter prøvetakingsdato
+Blant de 59 tilfellene som ble meldt til MSIS 04.05.2020, hadde bare 5 av tilfellene
+prøvetakingsdato 04.05.2020. Figuren under viser antall tilfeller etter prøvetakingsdato
 siden epidemiens start. Antall tilfeller per dag vil justeres, også tilbake i tid, ettersom nye
 tilfeller blir meldt til MSIS.
 
@@ -64,10 +64,10 @@ Figur 1. Personer med påvist covid-19 meldt til MSIS, etter prøvetakingsdato.
 COVID-19
 
 Dagsrapport
-torsdag 30. april 2020
+tirsdag 5. mai 2020
 
 Alder og kjønn
-Gjennomsnittsalder for tilfellene er 47 år, 49 % er menn.
+Gjennomsnittsalder for tilfellene er 46 år, 50 % er menn.
 Tabell 1. Personer med påvist covid-19 meldt til MSIS, etter aldersgrupper og kjønn.
 Alder
 
@@ -77,93 +77,93 @@ Menn
 
 Antall positive
 
-0-9
+64
 
-58
+60
 
-57
-
-115
+124
 
 10-19
 
-201
+212
 
-186
+204
 
-387
+416
 
 20-29
 
-689
+704
 
-512
+531
 
-1 201
+1 235
 
 30-39
 
-619
+636
 
-626
+650
 
-1 245
+1 286
 
 40-49
 
-701
+714
 
-687
+705
 
-1 388
+1 419
 
 50-59
 
-689
+703
 
-792
+805
 
-1 481
+1 508
 
 60-69
 
-394
+397
 
-456
+464
 
-850
+861
 
 70-79
 
-265
+267
 
-308
+309
 
-573
+576
 
 80-89
 
-206
+208
 
-150
+153
 
-356
+361
 
 >= 90
 
-74
+76
 
-40
+41
 
-114
+117
 
 Totalt
 
-3 896
+3 981
 
-3 814
+3 922
 
-7 710
+7 903
+
+0-9
 
 Figur 2. Personer med påvist covid-19 meldt til MSIS, etter aldersgrupper og kjønn.
 
@@ -172,7 +172,7 @@ Figur 2. Personer med påvist covid-19 meldt til MSIS, etter aldersgrupper og kj
 COVID-19
 
 Dagsrapport
-torsdag 30. april 2020
+tirsdag 5. mai 2020
 
 Smittested
 Smittested inn-/utland utgår fra dagsrapportene.
@@ -180,15 +180,13 @@ Smittested inn-/utland utgår fra dagsrapportene.
 Fylker
 Tabell 2. Personer med påvist covid-19 meldt til MSIS siste to døgn, totalt og per 100 000
 innbyggere fordelt på fylke.
-Smittested
+Tilfeller
+prøvedato
+03.05.2020
 
 Tilfeller
 prøvedato
-28.04.2020
-
-Tilfeller
-prøvedato
-29.04.2020
+04.05.2020
 
 Totalt antall
 meldte
@@ -200,23 +198,23 @@ tilfeller per
 
 Agder
 
-1
-
-1
-
-325
-
-105,8
-
-Innlandet
-
-1
+2
 
 0
 
-437
+332
 
-117,7
+108,1
+
+Innlandet
+
+2
+
+0
+
+447
+
+120,4
 
 Møre og
 Romsdal
@@ -235,19 +233,17 @@ Nordland
 
 0
 
-114
+115
 
-47,3
+47,7
 
-Oslo
+21
 
-16
+3
 
-0
+2 447
 
-2 364
-
-340,9
+352,9
 
 Rogaland
 
@@ -255,78 +251,82 @@ Rogaland
 
 0
 
-431
+435
 
-89,8
+90,6
 
 Troms og
 Finnmark
 
-3
+1
 
 0
 
-240
+246
 
-98,6
+101,1
 
 Trøndelag
 
-3
+2
 
 0
 
-477
+501
 
-101,8
+106,9
 
 Vestfold og
 Telemark
 
-0
+1
 
 0
 
-272
+277
 
-64,9
+66,0
 
 Vestland
 
-1
+2
 
 0
 
-856
+871
 
-134,5
+136,8
 
 Viken
 
-14
-
-1
-
-2 071
-
-166,9
-
-Totalt
-
-39
+9
 
 2
 
-7 710
+2 109
 
-143,6
+169,9
+
+Totalt
+
+40
+
+5
+
+7 903
+
+147,2
+
+Smittested
+
+Oslo
 
 4
 
 COVID-19
 
 Dagsrapport
-torsdag 30. april 2020
+tirsdag 5. mai 2020
 
 Figur 3. Personer i Norge med covid-19 (venstre y-akse) og per 100 000 (høyre y-akse).
 *Det er i gjennomsnitt 1-2 dager forsinkelse i tiden fra prøvetaking til registrering i MSIS (markert med rød stjerne).
@@ -336,17 +336,17 @@ Figur 3. Personer i Norge med covid-19 (venstre y-akse) og per 100 000 (høyre y
 COVID-19
 
 Dagsrapport
-torsdag 30. april 2020
+tirsdag 5. mai 2020
 
 Sykehusinnleggelser
-Det er totalt 998 personer med påvist covid-19 som har vært innlagt i sykehus i Norge. For
-825 pasienter (83 %) var covid-19 hovedårsak til innleggelsen. Norsk pandemiregister* per
-30.04.2020, kl. 08:00.
-Gjennomsnittsalderen for de 825 pasientene med covid-19 som hovedårsak til innleggelsen
+Det er totalt 1015 personer med påvist covid-19 som har vært innlagt i sykehus i Norge. For
+845 pasienter (83 %) var covid-19 hovedårsak til innleggelsen. Norsk pandemiregister* per
+05.05.2020, kl. 08:00.
+Gjennomsnittsalderen for de 845 pasientene med covid-19 som hovedårsak til innleggelsen
 er 60 år, og 60 % er menn.
 Se siste ukerapport for utvikling over tid: Covid-19 ukerapporter.
 Tabell 3. Personer innlagt i sykehus med bekreftet covid-19 og med covid-19 som hovedårsak
-til innleggelsen rapportert til norsk pandemiregister etter aldersgrupper, 30.04.2020, kl.
+til innleggelsen rapportert til norsk pandemiregister etter aldersgrupper, 05.05.2020, kl.
 08:00.
 Alder
 
@@ -354,9 +354,15 @@ Antall
 
 Andel (%)
 
-0-19
+0-9
 
-11
+6
+
+1
+
+10-19
+
+7
 
 1
 
@@ -368,49 +374,49 @@ Andel (%)
 
 30-39
 
-59
+63
 
 7
 
 40-49
 
-112
+113
 
-14
+13
 
 50-59
 
-168
+173
 
 20
 
 60-69
 
-168
+170
 
 20
 
 70-79
 
-167
+170
 
 20
 
 80-89
 
-97
+99
 
 12
 
 >=90
 
-16
+17
 
 2
 
 Totalt
 
-825
+845
 
 100
 
@@ -424,16 +430,16 @@ måter, og er derfor ikke direkte sammenlignbare.
 COVID-19
 
 Dagsrapport
-torsdag 30. april 2020
+tirsdag 5. mai 2020
 
 Intensivenhet
-Det er totalt 214 personer med påvist covid-19 som har vært innlagt i intensivenhet, av disse
-er 47 inneliggende. Norsk intensivregister per 30.04.2020, kl. 08:00.
-Gjennomsnittsalderen for de 214 bekreftede pasientene er 62 år, og 74 % er menn. Det er
-registrert 33 dødsfall.
+Det er totalt 215 personer med påvist covid-19 som har vært innlagt i intensivenhet, av disse
+er 35 inneliggende. Norsk intensivregister per 05.05.2020, kl. 08:00.
+Gjennomsnittsalderen for de 215 bekreftede pasientene er 62 år, og 75 % er menn. Det er
+registrert 35 dødsfall.
 Se siste ukerapport for utvikling over tid: Covid-19 ukerapporter.
 Tabell 4. Personer innlagt i intensivenhet med bekreftet covid-19 rapportert til norsk
-intensivregister, etter aldersgrupper , 30.04.2020, kl. 08:00.
+intensivregister, etter aldersgrupper, 05.05.2020, kl. 08:00.
 Alder
 
 Antall
@@ -468,11 +474,11 @@ Andel (%)
 
 61
 
-29
+28
 
 70-79
 
-49
+50
 
 23
 
@@ -484,7 +490,7 @@ Andel (%)
 
 Totalt
 
-214
+215
 
 100
 
@@ -493,15 +499,15 @@ Totalt
 COVID-19
 
 Dagsrapport
-torsdag 30. april 2020
+tirsdag 5. mai 2020
 
 Covid-19 assosierte dødsfall
-Det er totalt 204 dødsfall varslet til Folkehelseinstituttet (per 30.04.2020 kl.08.00). Det er
+Det er totalt 209 dødsfall varslet til Folkehelseinstituttet (per 05.05.2020 kl.08.00). Det er
 ikke alltid mulig å skille om pasienten har dødd av eller med covid-19.
-Gjennomsnittsalderen for de døde er 83 år, medianalderen er 84 og 55 % av de døde er
+Gjennomsnittsalderen for de døde er 82 år, medianalderen er 84 og 55 % av de døde er
 menn.
 Tabell 5. Covid-19 assosierte dødsfall varslet til Folkehelseinstituttet, etter aldersgrupper og
-kjønn, per 30.04.2020 kl.08.00.
+kjønn, per 05.05.2020 kl.08.00.
 Alder
 
 Menn
@@ -534,21 +540,21 @@ Andel (%)
 
 60-69
 
-11
+12
 
 3
 
-14
+15
 
 7
 
 70-79
 
-31
+33
 
 16
 
-47
+49
 
 23
 
@@ -556,9 +562,9 @@ Andel (%)
 
 41
 
-34
+36
 
-75
+77
 
 37
 
@@ -570,31 +576,31 @@ Andel (%)
 
 59
 
-29
+28
 
 Totalt
 
-112
+115
 
-92
+94
 
-204
+209
 
 100
 
 Tabell 6. Covid-19 assosierte dødsfall varslet til Folkehelseinstituttet, etter dødssted, per
-30.04.2020 kl.08.00.
+05.05.2020 kl.08.00.
 Dødssted
 
 Antall
 
 Andel (%)
 
-72
+74
 
 35
 
-122
+125
 
 60
 
@@ -610,7 +616,7 @@ Ukjent
 
 2
 
-204
+209
 
 100
 
@@ -626,61 +632,59 @@ Totalt
 COVID-19
 
 Dagsrapport
-torsdag 30. april 2020
+tirsdag 5. mai 2020
 
 Laboratorieovervåking
-Totalt 172 586 personer er rapportert testet for covid-19, pr. 29.04.2020 kl. 24.00
+Totalt 189 657 personer er rapportert testet for covid-19, pr. 04.05.2020 kl. 24.00.
 Laboratoriedata hentes nå fra den nye MSIS laboratoriedatabasen, noe som gir oss et mer
 komplett datasett med hensyn til prøvetakingsdato. Elektroniske kopisvar går direkte fra
 laboratoriene inn til MSIS laboratoriedatabase. Tallene oppgjøres nå på antall personer som
 testes og ikke antall analyser. En person kan ha fått utført mer enn en analyse for covid-19.
 Andelen positive har variert gjennom perioden. Antall testet og andel positive funn blant de
-testede påvirkes av endringer i testkriterier.
-Siste dagers tall kan bli justerte ved neste oppdatering.
+testede påvirkes av endringer i testkriterier. Siste dagers tall kan bli justerte ved neste
+oppdatering
 
 Figur 4. Antall testet for covid-19, og andelen positive blant disse.
-Siste dagers tall kan bli justerte ved neste oppdatering. Ved overgang til MSIS laboratoriedatabase er
-data etter 1. april oppgjort på antall personer og ikke tester som tidligere. Dette medfører ikke store
-forskjeller i dataene.
+*Siste dagers tall kan bli justerte ved neste oppdatering. Ved overgang til MSIS laboratoriedatabase er data etter 1. april
+oppgjort på antall personer og ikke tester som tidligere. Dette medfører ikke store forskjeller i dataene.
 
 9
 
 COVID-19
 
 Dagsrapport
-torsdag 30. april 2020
-Tabell 7. Andel positive for covid-19 fordelt på helseregioner pr. 29.04.2020 kl. 24.00.
+tirsdag 5. mai 2020
+Tabell 7. Andel positive for covid-19 fordelt på helseregioner pr. 04.05.2020 kl. 24.00.
 *Tabellen inneholder ikke tall fra private laboratorier som analyserer tester fra hele landet.
-
 Helseregion
 
 % Positive
 
 Region Sør-Øst
 
-6,0
+5.7
 
 Region Vest
 
-4,0
+3.8
 
 Region Midt
 
-2,7
+2.6
 
 Region Nord
 
-2,1
+2.1
 
 10
 
 COVID-19
 
 Dagsrapport
-torsdag 30. april 2020
+tirsdag 5. mai 2020
 
 Konsultasjoner ved legekontor og legevakt - Sykdomspulsen
-Fram til 29.04.2020 har Folkehelseinstituttet mottatt informasjon om totalt 150 588
+Fram til 04.05.2020 har Folkehelseinstituttet mottatt informasjon om totalt 164 152
 konsultasjoner hos lege og legevakt for covid-19 (mistenkt eller bekreftet, ICPC-2
 diagnosekode R991 opprettet 06.03.2020). De som kontakter legen og får denne koden, har
 ikke nødvendigvis koronavirus, da de kliniske tegnene kan likne vanlig forkjølelse og
@@ -700,7 +704,7 @@ Sykdomspulsen, Folkehelseinstituttet.
 COVID-19
 
 Dagsrapport
-torsdag 30. april 2020
+tirsdag 5. mai 2020
 Tabell 8. Tall fra Sykdomspulsen etter fylke.
 Fylke
 
@@ -713,75 +717,75 @@ per 100 000 innbyggere
 
 Agder
 
-7 073
+7 624
 
-2 302,2
+2 481,5
 
 Innlandet
 
-9 006
+9 968
 
-2 425,0
+2 684,0
 
 Møre og Romsdal
 
-6 053
+6 566
 
-2 282,1
+2 475,5
 
 Nordland
 
-3 117
+3 288
 
-1 292,1
+1 363,0
 
 Oslo
 
-29 002
+31 560
 
-4 182,0
+4 550,9
 
 Rogaland
 
-12 590
+13 447
 
-2 623,5
+2 802,1
 
 Troms og Finnmark
 
-7 011
+7 537
 
-2 881,5
+3 097,7
 
 Trøndelag
 
-8 082
+8 863
 
-1 724,3
+1 891,0
 
 Vestfold og Telemark
 
-12 056
+13 257
 
-2 874,6
+3 161,0
 
 Vestland
 
-21 866
+23 615
 
-3 435,2
+3 710,0
 
 Viken
 
-34 732
+38 427
 
-2 798,3
+3 096,0
 
 Totalt
 
-150 588
+164 152
 
-2 805,5
+3 058,2
 
 12
 
