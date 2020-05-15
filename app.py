@@ -598,7 +598,7 @@ def barplot(date):
             title={"text": "Total cases", "font": {"size": 30}, "x": 0.5},
             xaxis={
                 "title": "",
-                "range": [dt(2020, 3, 1), dt(2020, 5, 15)],
+                "range": [dt(2020, 3, 1), dt(2020, 5, 30)],
                 "tickangle":45
             },
             yaxis={"title": "Total cases"},
@@ -624,7 +624,7 @@ def barplot2(date):
             title={"text": "New cases", "font": {"size": 30}, "x": 0.5},
             xaxis={
                 "title": "",
-                "range": [dt(2020, 3, 1), dt(2020, 5, 15)],
+                "range": [dt(2020, 3, 1), dt(2020, 5, 30)],
                 "tickangle":45
             },
             yaxis={"title": "New cases"},
